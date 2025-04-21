@@ -54,11 +54,11 @@
             "name": "Midnight Silver Metallic",
             "price": 0,
             "images": [
-              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå1.jpg",
-              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå2.jpg",
-              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå3.jpg",
-              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå4.jpg",
-              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå5.jpg"
+              "/images/model.s.pd/ModelS.19/mörkgrå.19/mörkgrå1.jpg",
+              "/images/model.s.pd/ModelS.19/mörkgrå.19/mörkgrå2.jpg",
+              "/images/model.s.pd/ModelS.19/mörkgrå.19/mörkgrå3.jpg",
+              "/images/model.s.pd/ModelS.19/mörkgrå.19/mörkgrå4.jpg",
+              "/images/model.s.pd/ModelS.19/mörkgrå.19/mörkgrå5.jpg"
             ]
           },
           {
@@ -66,11 +66,11 @@
             "name": "Pearl White Multi-Coat",
             "price": 12000,
             "images": [
-              "/images/model.s.pd/models.19/vit.19/vit1.jpg",
-              "/images/model.s.pd/models.19/vit.19/vit2.jpg",
-              "/images/model.s.pd/models.19/vit.19/vit3.jpg",
-              "/images/model.s.pd/models.19/vit.19/vit4.jpg",
-              "/images/model.s.pd/models.19/vit.19/vit5.jpg"
+              "/images/model.s.pd/ModelS.19/vit.19/vit1.jpg",
+              "/images/model.s.pd/ModelS.19/vit.19/vit2.jpg",
+              "/images/model.s.pd/ModelS.19/vit.19/vit3.jpg",
+              "/images/model.s.pd/ModelS.19/vit.19/vit4.jpg",
+              "/images/model.s.pd/ModelS.19/vit.19/vit5.jpg"
             ]
           },
           {
@@ -78,11 +78,11 @@
             "name": "Solid Black",
             "price": 12000,
             "images": [
-              "/images/model.s.pd/models.19/svart.19/svart1.jpg",
-              "/images/model.s.pd/models.19/svart.19/svart2.jpg",
-              "/images/model.s.pd/models.19/svart.19/svart3.jpg",
-              "/images/model.s.pd/models.19/svart.19/svart4.jpg",
-              "/images/model.s.pd/models.19/svart.19/svart5.jpg"
+              "/images/model.s.pd/ModelS.19/svart.19/svart1.jpg",
+              "/images/model.s.pd/ModelS.19/svart.19/svart2.jpg",
+              "/images/model.s.pd/ModelS.19/svart.19/svart3.jpg",
+              "/images/model.s.pd/ModelS.19/svart.19/svart4.jpg",
+              "/images/model.s.pd/ModelS.19/svart.19/svart5.jpg"
             ]
           },
           {
@@ -90,11 +90,11 @@
             "name": "Deep Blue Metallic",
             "price": 16000,
             "images": [
-              "/images/model.s.pd/models.19/blå.19/blå1.jpg",
-              "/images/model.s.pd/models.19/blå.19/blå2.jpg",
-              "/images/model.s.pd/models.19/blå.19/blå3.jpg",
-              "/images/model.s.pd/models.19/blå.19/blå4.jpg",
-              "/images/model.s.pd/models.19/blå.19/blå5.jpg"
+              "/images/model.s.pd/ModelS.19/blå.19/blå1.jpg",
+              "/images/model.s.pd/ModelS.19/blå.19/blå2.jpg",
+              "/images/model.s.pd/ModelS.19/blå.19/blå3.jpg",
+              "/images/model.s.pd/ModelS.19/blå.19/blå4.jpg",
+              "/images/model.s.pd/ModelS.19/blå.19/blå5.jpg"
             ]
           },
           {
@@ -102,11 +102,11 @@
             "name": "Red Multi-Coat",
             "price": 18000,
             "images": [
-              "/images/model.s.pd/models.19/röd.19/röd1.jpg",
-              "/images/model.s.pd/models.19/röd.19/röd2.jpg",
-              "/images/model.s.pd/models.19/röd.19/röd3.jpg",
-              "/images/model.s.pd/models.19/röd.19/röd4.jpg",
-              "/images/model.s.pd/models.19/röd.19/röd5.jpg"
+              "/images/model.s.pd/ModelS.19/röd.19/röd1.jpg",
+              "/images/model.s.pd/ModelS.19/röd.19/röd2.jpg",
+              "/images/model.s.pd/ModelS.19/röd.19/röd3.jpg",
+              "/images/model.s.pd/ModelS.19/röd.19/röd4.jpg",
+              "/images/model.s.pd/ModelS.19/röd.19/röd5.jpg"
             ]
           },
           
@@ -115,11 +115,11 @@
             "name": "Silver Metallic",
             "price": 20000,
             "images": [
-              "/images/model.s.pd/models.19/silver.19/silver1.jpg",
-              "/images/model.s.pd/models.19/silver.19/silver2.jpg",
-              "/images/model.s.pd/models.19/silver.19/silver3.jpg",
-              "/images/model.s.pd/models.19/silver.19/silver4.jpg",
-              "/images/model.s.pd/models.19/silver.19/silver5.jpg"
+              "/images/model.s.pd/ModelS.19/silver.19/silver1.jpg",
+              "/images/model.s.pd/ModelS.19/silver.19/silver2.jpg",
+              "/images/model.s.pd/ModelS.19/silver.19/silver3.jpg",
+              "/images/model.s.pd/ModelS.19/silver.19/silver4.jpg",
+              "/images/model.s.pd/ModelS.19/silver.19/silver5.jpg"
             ]
           }
         ]
@@ -134,11 +134,11 @@
             "name": "Midnight Silver Metallic",
             "price": 0,
             "images": [
-              "/images/model.s.pd/models.21/mörkgrå.21/grå1.21.jpg",
-              "/images/model.s.pd/models.21/mörkgrå.21/grå4221.jpg",
-              "/images/model.s.pd/models.21/mörkgrå.21/grå3.21.jpg",
-              "/images/model.s.pd/models.21/mörkgrå.21/grå4.21.jpg",
-              "/images/model.s.pd/models.21/mörkgrå.21/mörkgrå5.jpg"
+              "/images/model.s.pd/modelS.21/mörkgrå.21/grå1.21.jpg",
+              "/images/model.s.pd/modelS.21/mörkgrå.21/grå4221.jpg",
+              "/images/model.s.pd/modelS.21/mörkgrå.21/grå3.21.jpg",
+              "/images/model.s.pd/modelS.21/mörkgrå.21/grå4.21.jpg",
+              "/images/model.s.pd/modelS.21/mörkgrå.21/mörkgrå5.jpg"
             ]
           },
           {
@@ -146,11 +146,11 @@
             "name": "Pearl White Multi-Coat",
             "price": 12000,
             "images": [
-              "/images/model.s.pd/models.21/vit.21/vit1.21.jpg",
-              "/images/model.s.pd/models.21/vit.21/vit2.21.jpg",
-              "/images/model.s.pd/models.21/vit.21/vit3.21.jpg",
-              "/images/model.s.pd/models.21/vit.21/vit4.21.jpg",
-              "/images/model.s.pd/models.21/vit.21/vit5.jpg"
+              "/images/model.s.pd/modelS.21/vit.21/vit1.21.jpg",
+              "/images/model.s.pd/modelS.21/vit.21/vit2.21.jpg",
+              "/images/model.s.pd/modelS.21/vit.21/vit3.21.jpg",
+              "/images/model.s.pd/modelS.21/vit.21/vit4.21.jpg",
+              "/images/model.s.pd/modelS.21/vit.21/vit5.jpg"
             ]
           },
           {
@@ -158,11 +158,11 @@
             "name": "Solid Black",
             "price": 12000,
             "images": [
-              "/images/model.s.pd/models.21/svart.21/svart1.21.jpg",
-              "/images/model.s.pd/models.21/svart.21/svart2.21.jpg",
-              "/images/model.s.pd/models.21/svart.21/svart3.21.jpg",
-              "/images/model.s.pd/models.21/svart.21/svart4.21.jpg",
-              "/images/model.s.pd/models.21/svart.21/svart5.jpg"
+              "/images/model.s.pd/modelS.21/svart.21/svart1.21.jpg",
+              "/images/model.s.pd/modelS.21/svart.21/svart2.21.jpg",
+              "/images/model.s.pd/modelS.21/svart.21/svart3.21.jpg",
+              "/images/model.s.pd/modelS.21/svart.21/svart4.21.jpg",
+              "/images/model.s.pd/modelS.21/svart.21/svart5.jpg"
             ]
           },
           {
@@ -170,11 +170,11 @@
             "name": "Deep Blue Metallic",
             "price": 12000,
             "images": [
-              "/images/model.s.pd/models.21/blå.21/blå1.21.jpg",
-              "/images/model.s.pd/models.21/blå.21/blå2.21.jpg",
-              "/images/model.s.pd/models.21/blå.21/blå3.21.jpg",
-              "/images/model.s.pd/models.21/blå.21/blå4.21.jpg",
-              "/images/model.s.pd/models.21/blå.21/blå5.jpg"
+              "/images/model.s.pd/modelS.21/blå.21/blå1.21.jpg",
+              "/images/model.s.pd/modelS.21/blå.21/blå2.21.jpg",
+              "/images/model.s.pd/modelS.21/blå.21/blå3.21.jpg",
+              "/images/model.s.pd/modelS.21/blå.21/blå4.21.jpg",
+              "/images/model.s.pd/modelS.21/blå.21/blå5.jpg"
             ]
           },
           {
@@ -182,11 +182,11 @@
             "name": "Red Multi-Coat",
             "price": 16000,
             "images": [
-              "/images/model.s.pd/models.21/röd.21/röd1.21.jpg",
-              "/images/model.s.pd/models.21/röd.21/röd2.21.jpg",
-              "/images/model.s.pd/models.21/röd.21/röd3.21.jpg",
-              "/images/model.s.pd/models.21/röd.21/röd4.21.jpg",
-              "/images/model.s.pd/models.21/röd.21/röd5.jpg"
+              "/images/model.s.pd/modelS.21/röd.21/röd1.21.jpg",
+              "/images/model.s.pd/modelS.21/röd.21/röd2.21.jpg",
+              "/images/model.s.pd/modelS.21/röd.21/röd3.21.jpg",
+              "/images/model.s.pd/modelS.21/röd.21/röd4.21.jpg",
+              "/images/model.s.pd/modelS.21/röd.21/röd5.jpg"
             ]
           },
           
@@ -195,11 +195,11 @@
             "name": "Silver Metallic",
             "price": 20000,
             "images": [
-              "/images/model.s.pd/models.21/silver.21/silver1.21.jpg",
-              "/images/model.s.pd/models.21/silver.21/silver2.21.jpg",
-              "/images/model.s.pd/models.21/silver.21/silver3.21.jpg",
-              "/images/model.s.pd/models.21/silver.21/silver4.21.jpg",
-              "/images/model.s.pd/models.21/silver.21/silver5.jpg"
+              "/images/model.s.pd/modelS.21/silver.21/silver1.21.jpg",
+              "/images/model.s.pd/modelS.21/silver.21/silver2.21.jpg",
+              "/images/model.s.pd/modelS.21/silver.21/silver3.21.jpg",
+              "/images/model.s.pd/modelS.21/silver.21/silver4.21.jpg",
+              "/images/model.s.pd/modelS.21/silver.21/silver5.jpg"
             ]
           }
         ]

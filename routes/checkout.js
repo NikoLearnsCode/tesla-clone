@@ -9,8 +9,8 @@ router.get('/', (req, res) => {
     0
   );
 
-  res.render('Checkout', {
-    title: 'Checkout',
+  res.render('checkout', {
+    title: 'checkout',
     cart,
     totalCartPrice,
   });
