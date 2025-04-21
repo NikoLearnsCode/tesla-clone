@@ -44,7 +44,7 @@ async function fetchCarsData(model) {
   } finally {
     setTimeout(() => {
       fetchLoader.classList.add('hidden');
-    }, 300);
+    }, 500);
   }
 }
 
@@ -453,7 +453,7 @@ if (pageLoader) {
   window.addEventListener('load', () => {
     setTimeout(() => {
       pageLoader.classList.add('hidden');
-    }, 300);
+    }, 500);
   });
 }
 
