@@ -1,0 +1,222 @@
+[
+  {
+    "model": "ModelY",
+    "specs": [
+      {
+        "name": "Bakhjulsdrift",
+        "range": "455 km",
+        "speed": "233 km/h",
+        "acceleration": "6.9",
+        "price": 554170
+      },
+      {
+        "name": "Long Range med bakhjulsdrift",
+        "range": "600",
+        "speed": "222 km/h",
+        "acceleration": "5.9",
+        "price": 602170
+      },
+      {
+        "name": "Long Range med fyrhjulsdrift",
+        "range": "634 km",
+        "speed": "212 km/h",
+        "acceleration": "5.0 sek",
+        "price": 634170
+      },
+      {
+        "name": "Performance med fyrhjulsdrift",
+        "range": "514 km",
+        "speed": "250 km/h",
+        "acceleration": "3.7",
+        "price": 684170
+      }
+    ],
+    "autopilotPackages": [
+      {
+        "name": "Grundläggande Autopilot",
+        "price": 0,
+        "description": "Inkluderar autostyrning och adaptiv farthållare."
+      },
+      {
+        "name": "Uppdaterad Autopilot",
+        "price": 38900,
+        "description": "Inkluderar Basic Autopilot, samt förarinitierad assiserad körning från påfart till avfart på motorväg, filbyten och omkörningar. Inluderar även Dumb Summon, Actuallty Smart Summon och Autoparkering."
+      },
+      {
+        "name": "Total självkörningsförmåga",
+        "price": 77700,
+        "description": "Inkluderar uppdaterad autopilot, plus Trafik- och stoppskyltassisants. Dessutom kommer ditt fordon i framtida uppdateringar att kunna köra sig själv nästan var som helst med minimala föraråtgärder."
+      }
+    ],
+    "traction": [
+      {
+        "name": "Dragmöjlighet",
+        "price": 0,
+        "force": "1800 kg",
+        "description": "Dragkrog i höghållfast stål och kulkoppling med en förmåga att dra upp till 1800 kg."
+      }
+    ],
+    "wheels": [
+      {
+        "size": "Standard",
+        "name": "19\" Gemini-fälgar",
+        "price": 0,
+        "colors": [
+          {
+            "key": "gray",
+            "name": "Midnight Silver Metallic",
+            "price": 0,
+            "images": [
+              "/images/model.y.pd/modely.19/mörkgrå.19/mörkgrå1.jpg",
+              "/images/model.y.pd/modely.19/mörkgrå.19/mörkgrå2.jpg",
+              "/images/model.y.pd/modely.19/mörkgrå.19/mörkgrå3.jpg",
+              "/images/model.y.pd/modely.19/mörkgrå.19/mörkgrå4.jpg",
+              "/images/model.y.pd/modely.19/mörkgrå.19/mörkgrå5.jpg"
+            ]
+          },
+          {
+            "key": "white",
+            "name": "Pearl White Multi-Coat",
+            "price": 12000,
+            "images": [
+              "/images/model.y.pd/modely.19/vit.19/vit1.jpg",
+              "/images/model.y.pd/modely.19/vit.19/vit2.jpg",
+              "/images/model.y.pd/modely.19/vit.19/vit3.jpg",
+              "/images/model.y.pd/modely.19/vit.19/vit4.jpg",
+              "/images/model.y.pd/modely.19/vit.19/vit5.jpg"
+            ]
+          },
+          {
+            "key": "black",
+            "name": "Solid Black",
+            "price": 12000,
+            "images": [
+              "/images/model.y.pd/modely.19/svart.19/svart1.jpg",
+              "/images/model.y.pd/modely.19/svart.19/svart2.jpg",
+              "/images/model.y.pd/modely.19/svart.19/svart3.jpg",
+              "/images/model.y.pd/modely.19/svart.19/svart4.jpg",
+              "/images/model.y.pd/modely.19/svart.19/svart5.jpg"
+            ]
+          },
+          {
+            "key": "blue",
+            "name": "Deep Blue Metallic",
+            "price": 16000,
+            "images": [
+              "/images/model.y.pd/modely.19/blå.19/blå1.jpg",
+              "/images/model.y.pd/modely.19/blå.19/blå2.jpg",
+              "/images/model.y.pd/modely.19/blå.19/blå3.jpg",
+              "/images/model.y.pd/modely.19/blå.19/blå4.jpg",
+              "/images/model.y.pd/modely.19/blå.19/blå5.jpg"
+            ]
+          },
+          {
+            "key": "red",
+            "name": "Red Multi-Coat",
+            "price": 18000,
+            "images": [
+              "/images/model.y.pd/modely.19/röd.19/röd1.jpg",
+              "/images/model.y.pd/modely.19/röd.19/röd2.jpg",
+              "/images/model.y.pd/modely.19/röd.19/röd3.jpg",
+              "/images/model.y.pd/modely.19/röd.19/röd4.jpg",
+              "/images/model.y.pd/modely.19/röd.19/röd5.jpg"
+            ]
+          },
+         
+          {
+            "key": "silver",
+            "name": "Silver Metallic",
+            "price": 20000,
+            "images": [
+              "/images/model.y.pd/modely.19/silver.19/silver1.jpg",
+              "/images/model.y.pd/modely.19/silver.19/silver2.jpg",
+              "/images/model.y.pd/modely.19/silver.19/silver3.jpg",
+              "/images/model.y.pd/modely.19/silver.19/silver4.jpg",
+              "/images/model.y.pd/modely.19/silver.19/silver5.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "size": "Premium",
+        "name": "21\" Induction-fälgar",
+        "price": 27000,
+        "colors": [
+          {
+            "key": "gray",
+            "name": "Midnight Silver Metallic",
+            "price": 0,
+            "images": [
+              "/images/model.y.pd/modely.20/mörkgrå.20/mörkgrå1.jpg",
+              "/images/model.y.pd/modely.20/mörkgrå.20/mörkgrå2.jpg",
+              "/images/model.y.pd/modely.20/mörkgrå.20/mörkgrå3.jpg",
+              "/images/model.y.pd/modely.20/mörkgrå.20/mörkgrå4.jpg",
+              "/images/model.y.pd/modely.20/mörkgrå.20/mörkgrå5.jpg"
+            ]
+          },
+          {
+            "key": "white",
+            "name": "Pearl White Multi-Coat",
+            "price": 12000,
+            "images": [
+              "/images/model.y.pd/modely.20/vit.20/vit1.jpg",
+              "/images/model.y.pd/modely.20/vit.20/vit2.jpg",
+              "/images/model.y.pd/modely.20/vit.20/vit3.jpg",
+              "/images/model.y.pd/modely.20/vit.20/vit4.jpg",
+              "/images/model.y.pd/modely.20/vit.20/vit5.jpg"
+            ]
+          },
+          {
+            "key": "black",
+            "name": "Solid Black",
+            "price": 12000,
+            "images": [
+              "/images/model.y.pd/modely.20/svart.20/svart1.jpg",
+              "/images/model.y.pd/modely.20/svart.20/svart2.jpg",
+              "/images/model.y.pd/modely.20/svart.20/svart3.jpg",
+              "/images/model.y.pd/modely.20/svart.20/svart4.jpg",
+              "/images/model.y.pd/modely.20/svart.20/svart5.jpg"
+            ]
+          },
+          {
+            "key": "blue",
+            "name": "Deep Blue Metallic",
+            "price": 16000,
+            "images": [
+              "/images/model.y.pd/modely.20/blå.20/blå1.jpg",
+              "/images/model.y.pd/modely.20/blå.20/blå2.jpg",
+              "/images/model.y.pd/modely.20/blå.20/blå3.jpg",
+              "/images/model.y.pd/modely.20/blå.20/blå4.jpg",
+              "/images/model.y.pd/modely.20/blå.20/blå5.jpg"
+            ]
+          },
+          {
+            "key": "red",
+            "name": "Red Multi-Coat",
+            "price": 18000,
+            "images": [
+              "/images/model.y.pd/modely.20/röd.20/röd1.jpg",
+              "/images/model.y.pd/modely.20/röd.20/röd2.jpg",
+              "/images/model.y.pd/modely.20/röd.20/röd3.jpg",
+              "/images/model.y.pd/modely.20/röd.20/röd4.jpg",
+              "/images/model.y.pd/modely.20/röd.20/röd5.jpg"
+            ]
+          },
+          
+          {
+            "key": "silver",
+            "name": "Silver Metallic",
+            "price": 20000,
+            "images": [
+              "/images/model.y.pd/modely.20/silver.20/silver1.jpg",
+              "/images/model.y.pd/modely.20/silver.20/silver2.jpg",
+              "/images/model.y.pd/modely.20/silver.20/silver3.jpg",
+              "/images/model.y.pd/modely.20/silver.20/silver4.jpg",
+              "/images/model.y.pd/modely.20/silver.20/silver5.jpg"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

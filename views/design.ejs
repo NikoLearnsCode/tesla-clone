@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="font-poppins no-scrollbar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balthazar&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e5b228621.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/js/design.js"></script>
+  </head>
+  <body class="text-gray-800">
+    <style>
+      .no-scrollbar {
+        -ms-overflow-style: none !important;
+        scrollbar-width: none !important;
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none !important;
+      }
+    </style>
+    <header
+      class="flex justify-between items-center py-5 mq850:py-5 px-8 mq850:px-14 bg-white mq850:fixed top-0 left-0 w-full z-50"
+    >
+      <a href="/" class="w-32 min-w-32 max-w-32">
+        <svg class="" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="currentColor"
+            d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"
+          ></path>
+        </svg>
+      </a>
+      <div class="mq850:flex space-x-4 sm:space-x-6 text-base transition">
+        <a
+          href="/checkout"
+          class="outline-none flex items-center justify-center"
+        >
+          <i class="fa-sharp fa-light fa-cart-shopping text-xl"></i>
+          <span
+            class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-sm font-semibold w-6 h-6 flex rounded-full shadow-2xl ml-1"
+            ><%= cartItemCount %></span
+          >
+        </a>
+      </div>
+    </header>
+    <main class="flex flex-col mq850:flex-row mq850:mr-12">
+      <!-- Vänster sida -->
+      <div
+        id="gallery"
+        class="z-40 product-detail-gallery flex justify-center items-center w-full h-full sticky top-0 mq850:top-0 mq850:h-screen"
+      >
+        <div class="mq850:h-screen top-0 overflow-hidden z-40">
+          <img
+            id="current-image"
+            src=""
+            alt=""
+            class="w-full h-full object-contain"
+          />
+          <button
+            id="prev-button"
+            class="image-btn prev transition -translate-x-5 outline-none opacity-0 duration-700 absolute top-1/2 left-4 mq850:left-8 xl:left-20 bg-neutral-100 py-1 px-2.5 rounded"
+          >
+            <i class="fa-sharp fa-light fa-chevron-left"></i>
+          </button>
+          <button
+            id="next-button"
+            class="image-btn next transition translate-x-5 opacity-0 duration-700 outline-none absolute top-1/2 right-4 mq850:right-8 xl:right-20 bg-neutral-100 py-1 px-2.5 rounded"
+          >
+            <i class="fa-sharp fa-light fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Höger sida -->
+      <div
+        id="details"
+        class="product-detail-details flex flex-col gap-24 w-full mq850:min-w-[400px] mq850:max-w-[400px] mb-10 mqxs:mb-44 mq850:pl-12 px-5 mq850:px-0 mq850:mt-16"
+      >
+        <div id="variant-specs" class="product-detail-container-col-1">
+          <h1
+            id="model-title"
+            class="text-center text-4xl mq850:text-5xl font-medium pt-20 mq850:pt-10 pb-5"
+          >
+            <%= model.slice(0, 5) + '\n' + model.slice(5) %>
+          </h1>
+
+          <ul
+            id="specs-list"
+            class="flex justify-around mq850:justify-center mq850:space-x-10 mt-4 text-center"
+          >
+            <li id="range-spec">
+              <span class="range text-xl mq850:text-2xl font-medium">0</span>
+              <span class="text-xs font-medium">km</span>
+              <span class="block text-xs font-normal">Räckvidd</span>
+            </li>
+            <li id="speed-spec">
+              <span class="speed text-xl mq850:text-2xl font-medium">0</span>
+              <span class="text-xs font-medium">km/h</span>
+              <span class="block text-xs font-normal">Topphastighet</span>
+            </li>
+            <li id="acceleration-spec">
+              <span class="acceleration text-xl mq850:text-2xl font-medium"
+                >0</span
+              >
+              <span class="text-xs font-medium">s</span>
+              <span class="block text-xs font-normal">0-100 km/h</span>
+            </li>
+          </ul>
+          <!-- Dynamiskt genererade specs -->
+          <div id="motor-options-container"></div>
+        </div>
+        <div id="colors" class="product-detail-container-col-2">
+          <div class="text-center">
+            <span
+              class="current-color-price text-gray-600 mb-1 text-sm font-medium"
+            ></span>
+            <h5 id="current-color" class="text-mq850 text-xl font-medium"></h5>
+
+            <div
+              id="color-options"
+              class="flex justify-center space-x-1 mq850:space-x-3 mt-6 cursor-pointer"
+            >
+              <img
+                src="/images/product-detail-choices/Paint_StealthGrey.png"
+                alt=""
+                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                data-color="gray"
+              />
+              <img
+                src="/images/product-detail-choices/Paint_White.png"
+                alt=""
+                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full transition p-1"
+                data-color="white"
+              />
+              <img
+                src="/images/product-detail-choices/Paint_Black.png"
+                alt=""
+                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                data-color="black"
+              />
+              <img
+                src="/images/product-detail-choices/Paint_Blue.png"
+                alt=""
+                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                data-color="blue"
+              />
+              <img
+                src="/images/product-detail-choices/Red_Paint_R2.png"
+                alt=""
+                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                data-color="red"
+              />
+
+              <img
+                src="/images/product-detail-choices/Paint_Silver.png"
+                alt=""
+                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                data-color="silver"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="wheels" class="product-detail-container-col-3 text-center">
+          <span
+            class="current-wheel-price text-gray-600 mb-1 text-sm font-medium"
+          ></span>
+          <h5
+            id="current-wheel"
+            class="text-center block text-xl font-medium"
+          ></h5>
+          <div id="wheel-options" class="">
+            <span
+              class="flex mt-4 justify-center mqxs:space-x-4 space-x-3 items-center cursor-pointer"
+            >
+              <img
+                src="/images/product-detail-choices/wheel_19.png"
+                alt=""
+                class="wheel-option w-14 mq850:w-14 border-2 border-transparent rounded-full p-1 transition"
+                data-wheel="Standard"
+              />
+              <img
+                src="/images/product-detail-choices/wheel_21.png"
+                alt=""
+                class="wheel-option w-14 mq850:w-14 border-2 border-transparent rounded-full p-1 transition"
+                data-wheel="Premium"
+              />
+            </span>
+          </div>
+        </div>
+        <div class="product-detail-container-col-4 text-center">
+          <span class="block text-sm text-gray-600 font-medium mb-1"
+            ><%= car.traction[0].price === 0 ? 'Inkluderat' :
+            car.traction[0].price.toLocaleString() + ' kr' %></span
+          >
+
+          <h5 class="block text-xl font-medium"><%= car.traction[0].name %></h5>
+          <p class="text-sm mt-2 tracking-wide">
+            <%= car.traction[0].description %>
+          </p>
+        </div>
+        <div
+          id="autopilot-container"
+          class="relative font-medium flex flex-col"
+        >
+          <h4 class="text-center block text-xl font-medium">Autopilot-paket</h4>
+
+          <% car.autopilotPackages.forEach((pkg, i) => { %>
+          <div
+            class="autopilot-option transition border <%= i === 0 ? 'border-black bg-gray-50 text-gray-800' : 'border-gray-300 text-gray-500' %> shadow-sm p-4 rounded mt-3 text-xs cursor-pointer"
+            data-autopilot="<%= pkg.name %>"
+          >
+            <h5 class="mb-2 text-sm">
+              <%= pkg.name %>
+              <span class="float-right text-xs mqxs:text-sm font-medium">
+                <%= pkg.price === 0 ? 'Inkluderat' : pkg.price.toLocaleString()
+                + ' kr' %>
+              </span>
+            </h5>
+            <p class="tracking-wide text-xs"><%= pkg.description %></p>
+          </div>
+          <% }) %>
+        </div>
+
+        <div
+          class="product-detail-container-col-6 text-gray-700 w-full pb-3 pt-3 sticky bottom-0 bg-white z-48 transition duration-500"
+        >
+          <div
+            class="flex justify-between items-center text-lg font-medium pb-1 w-full"
+          >
+            <div class="flex-1">
+              <h5 class="text-xs">Totalsumma:</h5>
+              <span
+                id="total-price"
+                class="font-semibold transition duration-300 text-lg mqxs:text-xl"
+              ></span>
+            </div>
+
+            <button
+              id="submit-car-config"
+              class="flex-1 mqxs:flex-none mqxs:w-52 border-2 bg-blue-500 text-white border-blue-500 hover:border-blue-600 hover:text-white hover:bg-blue-600 text-sm font-semibold transition py-2 rounded"
+            >
+              Beställ nu
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="fetchLoader" class="loader">
+      <div class="spinner">
+        <div class="spinner-inner">
+          <img src="/images/loaderLogo.webp" alt="Logo" class="spinner-logo" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!-- <!DOCTYPE html>
+<html lang="sv" class="font-poppins">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balthazar&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <style>
+      .progress-container {
+        width: 100%;
+        margin: 2rem 0;
+        position: relative;
+      }
+
+      .progress-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+
+      .progress-line {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 2px;
+        width: 100%;
+        background: #e5e7eb;
+        z-index: 1;
+      }
+
+      .progress-line-filled {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 2px;
+        background: #3b82f6;
+        z-index: 2;
+        transition: width 0.5s ease;
+        width: 0%;
+      }
+
+      .step {
+        width: 2.5rem;
+        height: 2.5rem;
+        background: white;
+        border: 2px solid #e5e7eb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 3;
+        transition: all 0.3s ease;
+      }
+
+      .step-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      .step.active {
+        /* border-color: #3b82f6;
+        background: #3b82f6; */
+        background-color: rgb(49, 49, 49);
+        border-color: rgb(49, 49, 49);
+        /* background-color: rgb(34, 137, 21); */
+        /* border-color: rgb(34, 137, 21); */
+        color: white;
+      }
+
+      .step-label {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0.5rem;
+
+        font-size: 0.75rem;
+        color: #4b5563;
+        text-align: center;
+        min-width: 120px;
+        transition: all 0.3s ease;
+      }
+
+      @media (max-width: 850px) {
+        .step-label {
+          min-width: auto;
+          font-size: 0.66rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <header class="w-full bg-white px-6 mq850:px-10 py-5 z-40">
+      <a href="/" class="w-32 min-w-32 max-w-32 z-50 block">
+        <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="currentColor"
+            d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"
+          ></path>
+        </svg>
+      </a>
+    </header>
+
+    <main class="pb-16 pt-5 mq850:pt-0 flex items-center justify-center px-4 z-50">
+      <div id="pageLoader" class="loader">
+        <div class="spinner">
+          <div class="spinner-inner">
+            <img
+              src="/images/loaderLogo.webp"
+              alt="Logo"
+              class="spinner-logo"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="confirmation-container"
+        class="bg-white mq850:shadow-md mq850:border mq850:rounded-lg mq850:p-8 max-w-3xl w-full p-4 mq850:px-16 transition-all duration-200"
+        data-has-order="<%= (order && order.length > 0) ? 'true' : 'false' %>"
+      >
+        <h1
+          class="text-2xl sm:text-3xl italic text-gray-800 font-semibold text-center mb-8"
+        >
+          ORDERBEKRÄFTELSE
+        </h1>
+
+        <div
+          class="text-sm text-gray-600 flex items-center justify-between mb-4"
+        >
+          <div class="font-medium text-xs mq850:text-sm">
+            ORDERNUMMER: <span class="font-semibold block">#YWSNWDAAW</span>
+          </div>
+          <img src="/images/loaderLogo.webp" alt="" class=" w-14 sm:w-16" />
+          <div
+            class="font-medium text-xs mq850:text-sm text-right w-32 mq850:w-auto"
+          >
+            Beräknad leverans:
+            <span class="font-semibold"
+              ><%= new Date(Date.now() + 60 * 24 * 60 * 60 *
+              1000).toLocaleDateString('sv-SE') %></span
+            >
+          </div>
+        </div>
+        <div class="progress-container">
+          <div class="progress-line"></div>
+          <div class="progress-line-filled"></div>
+          <div class="progress-bar">
+            <div class="step active">
+              <svg class="step-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="step-label font-semibold">Order mottagen</span>
+            </div>
+
+            <div class="step">
+              <svg class="step-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                />
+                <path
+                  d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"
+                />
+              </svg>
+              <span class="step-label font-semibold">Order skickad</span>
+            </div>
+
+            <div class="step">
+              <svg class="step-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"
+                />
+              </svg>
+              <span class="step-label font-semibold">Under leverans</span>
+            </div>
+
+            <div class="step">
+              <svg class="step-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
+                />
+              </svg>
+              <span class="step-label font-semibold">Levererad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 p-2 mq850:p-6 rounded-lg">
+          <h2
+            class="text-lg font-semibold py-4 border-b-2 text-gray-800 border-gray-100 mb-6 pt-10 mq850:pt-1"
+          >
+            Din beställning
+          </h2>
+          <div class="space-y-4">
+            <% let total = 0; %> <% order.forEach(function(item) { %> <% total
+            += item.quantity * item.variantPrice; %>
+            <div
+              class="flex flex-col mq850:flex-row justify-between border-b border-gray-200 pb-4 w-full"
+            >
+              <div class=" ">
+                <img
+                  src="<%= item.image %>"
+                  alt="<%= item.model %>"
+                  class="w-full mq850:max-w-56 mq850:w-56 mq850:min-w-56 object-contain"
+                />
+              </div>
+              <div class="flex justify-between items-center w-full">
+                <div class="space-y-2">
+                  <h3 class="text-base text-gray-800 font-medium">
+                    <%= item.model.slice(0, 5) + '\n' + item.model.slice(5) %>
+                  </h3>
+                  <p class="text-xs sm:text-sm text-gray-600">
+                    Variant: <%= item.variant %>
+                  </p>
+                  <p class="text-sm text-gray-600">
+                    Antal: <%= item.quantity %>
+                  </p>
+                </div>
+
+                <div class="space-y-7">
+                  <p class="text-sm sm:text-base font-medium text-nowrap">
+                    <%= (item.quantity *
+                    item.variantPrice).toLocaleString('sv-SE') %> kr
+                  </p>
+                  <p class="text-sm text-gray-600 text-nowrap">
+                    <%= item.variantPrice.toLocaleString('sv-SE') %>
+                    <span class="text-xs">/st</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <% }); %>
+
+            <div class="pt-4">
+              <div class="flex justify-between items-center">
+                <span class="text-base font-medium">Totalsumma:</span>
+                <span
+                  class=" text-base sm:text-lg border-b-2 border-gray-700 text-gray-800 font-semibold"
+                  ><%= total.toLocaleString('sv-SE') %> kr</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center w-full">
+          <a
+            href="/"
+            class="inline-block bg-blue-500 text-white w-full mq850:w-64 text-sm font-semibold  hover:border-blue-600 px-6 py-2 border border-blue-500 rounded hover:bg-blue-600 transition duration-200 shadow-sm"
+          >
+            Gå tillbaka
+          </a>
+        </div>
+      </div>
+    </main>
+    <script>
+      // Hämta orderdata från data-attribut
+      const hasOrder =
+        document.getElementById('confirmation-container').dataset.hasOrder ===
+        'true';
+
+      //Spinner-synk
+      const spinner = document.querySelector('.spinner');
+      const logo = document.querySelector('.spinner-logo');
+      spinner.style.animationPlayState = 'paused';
+      logo.style.animationPlayState = 'paused';
+
+      setTimeout(() => {
+        spinner.style.animationPlayState = 'running';
+        logo.style.animationPlayState = 'running';
+      }, 50);
+
+      // Pageloader
+      window.addEventListener('load', function () {
+        setTimeout(() => {
+          document.getElementById('pageLoader').classList.add('hidden');
+        }, 1500);
+      });
+
+      // Kontrollera om ordern finns och har produkter
+      if (!hasOrder) {
+        window.location.href = '/';
+      }
+    </script>
+  </body>
+</html> -->

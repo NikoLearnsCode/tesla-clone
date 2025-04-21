@@ -1,0 +1,209 @@
+[
+  {
+    "model": "ModelS",
+    "specs": [
+      {
+        "name": "4-hjulsdrift",
+        "range": "634 km",
+        "speed": "250 km/h",
+        "acceleration": "3.2",
+        "price": 1181170
+      },
+      {
+        "name": "Plaid",
+        "range": "600 km",
+        "speed": "322 km/h",
+        "acceleration": "2.1",
+        "price": 1331170
+      }
+    ],
+    "autopilotPackages": [
+      {
+        "name": "Grundläggande Autopilot",
+        "price": 0,
+        "description": "Inkluderar autostyrning och adaptiv farthållare."
+      },
+      {
+        "name": "Uppdaterad Autopilot",
+        "price": 38900,
+        "description": "Inkluderar Basic Autopilot, samt förarinitierad assiserad körning från påfart till avfart på motorväg, filbyten och omkörningar. Inluderar även Dumb Summon, Actuallty Smart Summon och Autoparkering."
+      },
+      {
+        "name": "Total självkörningsförmåga",
+        "price": 77700,
+        "description": "Inkluderar uppdaterad autopilot, plus Trafik- och stoppskyltassisants. Dessutom kommer ditt fordon i framtida uppdateringar att kunna köra sig själv nästan var som helst med minimala föraråtgärder."
+      }
+    ],
+
+    "traction": [
+      {
+        "name": "Dragmöjlighet",
+        "force": "1600 kg",
+        "price": 0,
+        "description": "Dragkrog i höghållfast stål och kulkoppling med en förmåga att dra upp till 1600 kg."
+      }
+    ],
+    "wheels": [
+      {
+        "size": "Standard",
+        "name": "19\" Tempest-fälgar",
+        "price": 0,
+        "colors": [
+          {
+            "key": "gray",
+            "name": "Midnight Silver Metallic",
+            "price": 0,
+            "images": [
+              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå1.jpg",
+              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå2.jpg",
+              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå3.jpg",
+              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå4.jpg",
+              "/images/model.s.pd/models.19/mörkgrå.19/mörkgrå5.jpg"
+            ]
+          },
+          {
+            "key": "white",
+            "name": "Pearl White Multi-Coat",
+            "price": 12000,
+            "images": [
+              "/images/model.s.pd/models.19/vit.19/vit1.jpg",
+              "/images/model.s.pd/models.19/vit.19/vit2.jpg",
+              "/images/model.s.pd/models.19/vit.19/vit3.jpg",
+              "/images/model.s.pd/models.19/vit.19/vit4.jpg",
+              "/images/model.s.pd/models.19/vit.19/vit5.jpg"
+            ]
+          },
+          {
+            "key": "black",
+            "name": "Solid Black",
+            "price": 12000,
+            "images": [
+              "/images/model.s.pd/models.19/svart.19/svart1.jpg",
+              "/images/model.s.pd/models.19/svart.19/svart2.jpg",
+              "/images/model.s.pd/models.19/svart.19/svart3.jpg",
+              "/images/model.s.pd/models.19/svart.19/svart4.jpg",
+              "/images/model.s.pd/models.19/svart.19/svart5.jpg"
+            ]
+          },
+          {
+            "key": "blue",
+            "name": "Deep Blue Metallic",
+            "price": 16000,
+            "images": [
+              "/images/model.s.pd/models.19/blå.19/blå1.jpg",
+              "/images/model.s.pd/models.19/blå.19/blå2.jpg",
+              "/images/model.s.pd/models.19/blå.19/blå3.jpg",
+              "/images/model.s.pd/models.19/blå.19/blå4.jpg",
+              "/images/model.s.pd/models.19/blå.19/blå5.jpg"
+            ]
+          },
+          {
+            "key": "red",
+            "name": "Red Multi-Coat",
+            "price": 18000,
+            "images": [
+              "/images/model.s.pd/models.19/röd.19/röd1.jpg",
+              "/images/model.s.pd/models.19/röd.19/röd2.jpg",
+              "/images/model.s.pd/models.19/röd.19/röd3.jpg",
+              "/images/model.s.pd/models.19/röd.19/röd4.jpg",
+              "/images/model.s.pd/models.19/röd.19/röd5.jpg"
+            ]
+          },
+          
+          {
+            "key": "silver",
+            "name": "Silver Metallic",
+            "price": 20000,
+            "images": [
+              "/images/model.s.pd/models.19/silver.19/silver1.jpg",
+              "/images/model.s.pd/models.19/silver.19/silver2.jpg",
+              "/images/model.s.pd/models.19/silver.19/silver3.jpg",
+              "/images/model.s.pd/models.19/silver.19/silver4.jpg",
+              "/images/model.s.pd/models.19/silver.19/silver5.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "size": "Premium",
+        "name": "21\" Arachnid-fälgar",
+        "price": 44000,
+        "colors": [
+          {
+            "key": "gray",
+            "name": "Midnight Silver Metallic",
+            "price": 0,
+            "images": [
+              "/images/model.s.pd/models.21/mörkgrå.21/grå1.21.jpg",
+              "/images/model.s.pd/models.21/mörkgrå.21/grå4221.jpg",
+              "/images/model.s.pd/models.21/mörkgrå.21/grå3.21.jpg",
+              "/images/model.s.pd/models.21/mörkgrå.21/grå4.21.jpg",
+              "/images/model.s.pd/models.21/mörkgrå.21/mörkgrå5.jpg"
+            ]
+          },
+          {
+            "key": "white",
+            "name": "Pearl White Multi-Coat",
+            "price": 12000,
+            "images": [
+              "/images/model.s.pd/models.21/vit.21/vit1.21.jpg",
+              "/images/model.s.pd/models.21/vit.21/vit2.21.jpg",
+              "/images/model.s.pd/models.21/vit.21/vit3.21.jpg",
+              "/images/model.s.pd/models.21/vit.21/vit4.21.jpg",
+              "/images/model.s.pd/models.21/vit.21/vit5.jpg"
+            ]
+          },
+          {
+            "key": "black",
+            "name": "Solid Black",
+            "price": 12000,
+            "images": [
+              "/images/model.s.pd/models.21/svart.21/svart1.21.jpg",
+              "/images/model.s.pd/models.21/svart.21/svart2.21.jpg",
+              "/images/model.s.pd/models.21/svart.21/svart3.21.jpg",
+              "/images/model.s.pd/models.21/svart.21/svart4.21.jpg",
+              "/images/model.s.pd/models.21/svart.21/svart5.jpg"
+            ]
+          },
+          {
+            "key": "blue",
+            "name": "Deep Blue Metallic",
+            "price": 12000,
+            "images": [
+              "/images/model.s.pd/models.21/blå.21/blå1.21.jpg",
+              "/images/model.s.pd/models.21/blå.21/blå2.21.jpg",
+              "/images/model.s.pd/models.21/blå.21/blå3.21.jpg",
+              "/images/model.s.pd/models.21/blå.21/blå4.21.jpg",
+              "/images/model.s.pd/models.21/blå.21/blå5.jpg"
+            ]
+          },
+          {
+            "key": "red",
+            "name": "Red Multi-Coat",
+            "price": 16000,
+            "images": [
+              "/images/model.s.pd/models.21/röd.21/röd1.21.jpg",
+              "/images/model.s.pd/models.21/röd.21/röd2.21.jpg",
+              "/images/model.s.pd/models.21/röd.21/röd3.21.jpg",
+              "/images/model.s.pd/models.21/röd.21/röd4.21.jpg",
+              "/images/model.s.pd/models.21/röd.21/röd5.jpg"
+            ]
+          },
+          
+          {
+            "key": "silver",
+            "name": "Silver Metallic",
+            "price": 20000,
+            "images": [
+              "/images/model.s.pd/models.21/silver.21/silver1.21.jpg",
+              "/images/model.s.pd/models.21/silver.21/silver2.21.jpg",
+              "/images/model.s.pd/models.21/silver.21/silver3.21.jpg",
+              "/images/model.s.pd/models.21/silver.21/silver4.21.jpg",
+              "/images/model.s.pd/models.21/silver.21/silver5.jpg"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

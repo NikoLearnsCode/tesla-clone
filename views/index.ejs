@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" class="font-poppins">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balthazar&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e5b228621.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/js/header.js"></script>
+  </head>
+  <body>
+    <nav
+      id="mainNav"
+      class="navbar fixed top-0 left-0 flex w-full flex-row-reverse justify-between items-center  px-8 h-14 md:px-14 text-white z-50 bg-transparent font-semibold"
+    >
+      <a href="" class="w-32 min-w-32 max-w-32 order-3">
+        <svg class="" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="currentColor"
+            d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7"
+          ></path>
+        </svg>
+      </a>
+      <div
+        class="icon-nav hidden lg:flex space-x-4 sm:space-x-6 order-1 text-base transition"
+      >
+        <a
+          href="/checkout"
+          class="outline-none flex items-center justify-center"
+        >
+          <i class="fa-sharp fa-light fa-cart-shopping text-xl"></i>
+          <span
+            class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-sm font-semibold w-6 h-6 flex rounded-full shadow-2xl ml-1"
+            ><%= cartItemCount %></span
+          >
+        </a>
+      </div>
+      <button
+        id="mobileMenuBtn"
+        class="lg:hidden text-sm font-semibold outline-none px-6 py-2.5 bg-[rgba(23,29,60,0.13)] hover:bg-[rgba(23,29,60,0.2)] rounded transition"
+      >
+        Meny
+      </button>
+
+      <!-- Main ul -->
+
+      <ul
+        id="mainNavUl"
+        class="opacity-0 invisible lg:opacity-100 lg:visible lg:order-2 lg:flex lg:flex-row lg:justify-center lg:items-center lg:space-x-0 text-base lg:text-sm fixed top-0 left-0 w-full h-screen bg-white lg:bg-transparent lg:h-auto lg:relative overflow-auto lg:overflow-visible lg:text-inherit text-gray-700 flex-col pt-24 lg:pt-0 space-y-2 lg:space-y-0 py-4 px-4 lg:py-0 lg:px-0 z-50"
+      >
+        <button
+          class="lg:hidden close-nav outline-none fixed top-6 right-7 z-50"
+        >
+          <i class="fa-sharp fa-regular fa-xmark text-lg"></i>
+        </button>
+        <!-- li Bilar -->
+        <li
+          class="group relative nav-toggle hover:bg-gray-100 py-4 lg:py-0 rounded"
+        >
+          <span
+            class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 wrounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition rounded cursor-pointer"
+            >Bilar
+            <span class="lg:hidden mr-4 text-base float-right">
+              <i class="fa-sharp fa-regular fa-chevron-right"></i></span
+          ></span>
+          <!-- Dropdown -->
+
+          <ul
+            class="dropdown-menu w-full h-full lg:h-auto flex justify-center items-center fixed left-0 top-0 lg:top-14 bg-white shadow-lg z-40 p-4 mqxs:p-8 lg:p-20 opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible overflow-auto"
+          >
+            <!-- Col 1 bilar -->
+            <div
+              class="grid grid-cols-1 lg:grid-cols-[repeat(3,auto)] max-w-screen-2xl gap-3 sm:gap-6 h-full w-full lg:w-auto pt-20 lg:pt-0 text-sm"
+            >
+              <div
+                class="grid grid-cols-1 mqxs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6 xl:grid-cols-4 transition items-center justify-center text-center m-auto w-full"
+              >
+                <li
+                  class="flex items-center mqxs:flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-1"
+                >
+                  <a href="design/ModelS">
+                    <img
+                      src="/images/Nav/Mega-Menu-Vehicles-Model-S.png"
+                      alt=""
+                      class="w-48 mqxs:w-56 mr-4 mqxs:mr-0"
+                    />
+                  </a>
+
+                  <span
+                    class="text-xs lg:text-sm text-center mb-5 mqxs:mb-0 text-nowrap"
+                  >
+                    <h3 class="my-1 mqxs:my-2 text-lg font-semibold">
+                      Model S
+                    </h3>
+                    <a
+                      href="design/ModelS"
+                      class="text-gray-700 border-b border-gray-300 hover:border-gray-700 transition"
+                      >Läs mer</a
+                    >
+                    <a
+                      href="design/ModelS"
+                      class="text-gray-700 border-b ml-3 sm:ml-5 border-gray-300 hover:border-gray-700 transition"
+                      >Beställ</a
+                    >
+                  </span>
+                </li>
+                <li
+                  class="flex items-center mqxs:flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-2"
+                >
+                  <a href="design/Model3">
+                    <img
+                      src="/images/Nav/Mega-Menu-Vehicles-Model-3-Performance-LHD.png"
+                      alt=""
+                      class="w-48 mqxs:w-56 mr-4 mqxs:mr-0"
+                    />
+                  </a>
+                  <span
+                    class="text-xs lg:text-sm text-center mb-3 mqxs:mb-0 text-nowrap"
+                  >
+                    <h3 class="my-1 mqxs:my-2 text-lg font-semibold">
+                      Model 3
+                    </h3>
+
+                    <a
+                      href="design/Model3"
+                      class="text-gray-700 border-b border-gray-300 hover:border-gray-700 transition"
+                      >Läs mer</a
+                    >
+                    <a
+                      href="design/Model3"
+                      class="text-gray-700 border-b ml-3 sm:ml-5 border-gray-300 hover:border-gray-700 transition"
+                      >Beställ</a
+                    >
+                  </span>
+                </li>
+                <li
+                  class="flex items-center mqxs:flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-3"
+                >
+                  <a href="design/ModelX">
+                    <img
+                      src="/images/Nav/Mega-Menu-Vehicles-Model-X.png"
+                      alt=""
+                      class="w-48 mqxs:w-56 mr-4 mqxs:mr-0"
+                    />
+                  </a>
+                  <span
+                    class="text-xs lg:text-sm text-center mb-3 mqxs:mb-0 text-nowrap"
+                  >
+                    <h3 class="my-1 mqxs:my-2 text-lg font-semibold">
+                      Model X
+                    </h3>
+
+                    <a
+                      href="design/ModelX"
+                      class="text-gray-700 border-b border-gray-300 hover:border-gray-700 transition"
+                      >Läs mer</a
+                    >
+                    <a
+                      href="design/ModelX"
+                      class="text-gray-700 border-b ml-3 sm:ml-5 border-gray-300 hover:border-gray-700 transition"
+                      >Beställ</a
+                    >
+                  </span>
+                </li>
+                <li
+                  class="flex items-center mqxs:flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-4"
+                >
+                  <a href="design/ModelY">
+                    <img
+                      src="/images/Nav/Mega-Menu-Vehicles-Model-Y.avif"
+                      alt=""
+                      class="w-48 mqxs:w-56 mr-4 mqxs:mr-0"
+                    />
+                  </a>
+                  <span
+                    class="text-xs lg:text-sm text-center mb-3 mqxs:mb-0 text-nowrap"
+                  >
+                    <h3 class="my-1 mqxs:my-2 text-lg font-semibold">
+                      Model Y
+                    </h3>
+
+                    <a
+                      href="design/ModelY"
+                      class="text-gray-700 border-b border-gray-300 hover:border-gray-700 transition"
+                      >Läs mer</a
+                    >
+                    <a
+                      href="design/ModelY"
+                      class="text-gray-700 border-b ml-3 sm:ml-5 border-gray-300 hover:border-gray-700 transition"
+                      >Beställ</a
+                    >
+                  </span>
+                </li>
+                <li
+                  class="flex items-center mqxs:flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-5"
+                >
+                  <span>
+                    <img
+                      src="/images/Nav/Mega-Menu-Vehicles-Cybertruck-1x.png"
+                      alt=""
+                      class="w-40 mqxs:w-56 mr-4 mqxs:mr-0"
+                    />
+                  </span>
+                  <span class="text-xs lg:text-sm">
+                    <h3 class="my-1 mqxs:my-2 text-lg font-semibold">
+                      Cybertruck
+                    </h3>
+                    <span class="text-gray-500">Lanseras snart</span>
+                  </span>
+                </li>
+                <li
+                  class="flex items-center mqxs:flex-col justify-center group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-6"
+                >
+                  <span class="-ml-10 mqxs:ml-0">
+                    <img
+                      src="/images/Nav/roadster_side_view.avif"
+                      alt=""
+                      class="w-56"
+                    />
+                  </span>
+                  <span class="text-xs lg:text-sm">
+                    <h3 class="my-1 mqxs:my-2 text-lg font-semibold">
+                      Roadster
+                    </h3>
+                    <span class="text-gray-500">Lanseras snart</span>
+                  </span>
+                </li>
+              </div>
+
+              <!-- bilar -->
+
+              <!-- Border mellan listorna -->
+              <div
+                class="h-[1px] mt-4 lg:mt-0 w-auto lg:w-[1px] lg:h-auto bg-gray-200 lg:mx-10 z-50"
+              ></div>
+              <!-- Lista till höger -->
+              <div class="flex flex-col space-y-6 pt-2 pb-10 pl-4 mqxs:pl-0">
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Läs mer</a>
+                </li>
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Inbyte</a>
+                </li>
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Förkonfigurerade fordon</a>
+                </li>
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Certified Pre-Owned</a>
+                </li>
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Tjänstebil</a>
+                </li>
+              </div>
+            </div>
+            <div
+              class="lg:hidden w-full fixed top-0 right-4 bg-white p-8 cursor-auto"
+            ></div>
+
+            <button
+              class="backBtn-nav fixed top-6 left-7 lg:hidden outline-none z-50"
+            >
+              <i class="fa-sharp fa-regular fa-chevron-left text-base"></i>
+            </button>
+
+            <h5
+              class="lg:hidden fixed top-6 left-1/2 -translate-x-1/2 z-50 text-sm cursor-auto"
+            >
+              Bilar
+            </h5>
+          </ul>
+        </li>
+
+        <li
+          class="group relative nav-toggle hover:bg-neutral-100 py-4 lg:py-0 rounded cursor-auto"
+        >
+          <span
+            class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
+            >Energi
+            <span class="lg:hidden mr-4 text-base float-right">
+              <i class="fa-sharp fa-regular fa-chevron-right"></i></span
+          ></span>
+          <!-- Dropdown Energi -->
+
+          <ul
+            class="dropdown-menu w-full h-full lg:h-auto fixed left-0 top-0 lg:top-14 bg-white shadow-lg z-40 p-8 lg:p-24 opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible overflow-auto"
+          >
+            <div
+              class="flex flex-col lg:grid lg:grid-cols-[repeat(3,auto)] lg:justify-center w-full gap-6 lg:gap-2 h-full pt-20 lg:pt-0 text-sm"
+            >
+              <div
+                class="flex flex-col gap-6 mqxs:flex-row transition lg:items-center justify-start lg:justify-center text-center"
+              >
+                <li
+                  class="flex mqxs:flex-col group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-1"
+                >
+                  <span
+                    ><img
+                      src="/images/Nav/Mega-Menu-Energy-Megapack.png"
+                      alt=""
+                      class="w-48 mqxs:w-56 mr-3 mqxs:mr-0"
+                  /></span>
+                  <span class="text-xs lg:text-sm">
+                    <h3 class="my-2 text-sm mqxs:text-base font-semibold">
+                      Megapack
+                    </h3>
+                    <span class="text-gray-500">Lanseras snart</span>
+                  </span>
+                </li>
+                <li
+                  class="flex mqxs:flex-col group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-2"
+                >
+                  <span
+                    ><img
+                      src="/images/Nav/Mega-Menu-Energy-Powerwall-Global.png"
+                      alt=""
+                      class="w-48 mqxs:w-56 mr-3 mqxs:mr-0"
+                  /></span>
+                  <span class="text-xs lg:text-sm">
+                    <h3 class="my-2 text-sm mqxs:text-base">Powerwall</h3>
+                    <span class="text-gray-500">Lanseras snart</span>
+                  </span>
+                </li>
+              </div>
+              <!-- Border mellan listorna -->
+              <div
+                class="h-[1px] mt-4 lg:mt-0 w-full lg:w-[1px] lg:h-auto bg-gray-200 lg:mx-10 z-50"
+              ></div>
+              <!-- Lista till höger -->
+              <div class="space-y-6 pt-2 pb-6">
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500 disabled:pointer-events-none"
+                >
+                  <a href="#">Elleverantörer</a>
+                </li>
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Företag</a>
+                </li>
+              </div>
+            </div>
+            <div
+              class="lg:hidden w-full fixed top-0 right-4 bg-white p-8 cursor-auto"
+            ></div>
+
+            <button
+              class="backBtn-nav outline-none fixed top-6 left-7 lg:hidden z-50"
+            >
+              <i class="fa-sharp fa-regular fa-chevron-left text-base"></i>
+            </button>
+
+            <h5
+              class="lg:hidden fixed top-6 left-1/2 -translate-x-1/2 z-50 text-sm cursor-auto"
+            >
+              Energi
+            </h5>
+          </ul>
+        </li>
+
+        <!-- Dropdown laddning -->
+        <li
+          class="group relative nav-toggle hover:bg-neutral-100 py-4 lg:py-0 rounded cursor-auto"
+        >
+          <span
+            class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
+            >Laddning
+            <span class="lg:hidden mr-4 text-base float-right">
+              <i class="fa-sharp fa-regular fa-chevron-right"></i></span
+          ></span>
+          <!-- Dropdown -->
+
+          <ul
+            class="dropdown-menu w-full h-full lg:h-auto fixed left-0 top-0 lg:top-14 bg-white shadow-lg z-40 p-8 lg:p-24 opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible overflow-auto"
+          >
+            <div
+              class="grid grid-cols-[repeat(1,auto)] lg:grid-cols-[repeat(3,auto)] max-w-screen-2xl lg:justify-center h-3/4 pt-20 lg:pt-0 m-auto gap-6 text-sm w-full lg:w-auto"
+            >
+              <div
+                class="grid grid-cols-1 mqxs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-6 xl:grid-cols-3 transition items-center text-center m-auto text-sm"
+              >
+                <li
+                  class="flex items-center mqxs:flex-col group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-1"
+                >
+                  <span class=""
+                    ><img
+                      src="/images/Nav/Mega-Menu-Charging-Charging-Global.png"
+                      alt=""
+                      class="w-48 mqxs:w-56"
+                  /></span>
+
+                  <span class="w-48 mqxs:w-auto text-xs lg:text-sm">
+                    <h3 class="my-2 text-sm mqxs:text-base font-semibold">
+                      Laddning
+                    </h3>
+                    <span class="text-gray-500">Lanseras snart</span>
+                  </span>
+                </li>
+                <li
+                  class="flex items-center mqxs:flex-col group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-2"
+                >
+                  <span
+                    ><img
+                      src="/images/Nav/Mega-Menu-Charging-Home-Charging-Global.png"
+                      alt=""
+                      class="w-48 mqxs:w-56"
+                  /></span>
+                  <span class="w-48 mqxs:w-auto text-xs lg:text-sm">
+                    <h3 class="my-2 text-sm mqxs:text-base font-semibold">
+                      Hemmaladdning
+                    </h3>
+                    <span class="text-gray-500">Lanseras snart</span>
+                  </span>
+                </li>
+
+                <li
+                  class="flex items-center mqxs:flex-col group-hover:opacity-100 group-hover:translate-y-0 dropdown-image delay-3"
+                >
+                  <span
+                    ><img
+                      src="/images/Nav/Mega-Menu-Charging-Supercharging-EMEA.png"
+                      alt=""
+                      class="w-48 mqxs:w-56"
+                  /></span>
+                  <span class="w-48 mqxs:w-auto text-xs lg:text-sm">
+                    <h3 class="my-2 text-sm mqxs:text-base font-semibold">
+                      Supercharging
+                    </h3>
+                    <span class="text-gray-500">Lanseras snart</span>
+                  </span>
+                </li>
+              </div>
+              <!-- Border mellan listorna -->
+              <div
+                class="h-[1px] mt-4 lg:mt-0 lg:w-[1px] lg:h-auto bg-gray-200 lg:mx-10 z-50"
+              ></div>
+              <!-- Lista till höger -->
+              <div class="space-y-6 pb-6 w-full">
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Supercharger-omröstning</a>
+                </li>
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Bli värd för en Supercharger</a>
+                </li>
+                <li
+                  class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                >
+                  <a href="#">Bli värd för en Wall Connector</a>
+                </li>
+              </div>
+            </div>
+            <div
+              class="lg:hidden w-full fixed top-0 right-4 bg-white p-8 cursor-auto"
+            ></div>
+
+            <button
+              class="backBtn-nav outline-none fixed top-6 left-7 lg:hidden z-50"
+            >
+              <i class="fa-sharp fa-regular fa-chevron-left text-base"></i>
+            </button>
+
+            <h5
+              class="lg:hidden fixed top-6 left-1/2 -translate-x-1/2 z-50 cursor-auto text-sm"
+            >
+              Laddning
+            </h5>
+          </ul>
+        </li>
+
+        <!-- Dropdown Upptäck -->
+
+        <div>
+          <li
+            class="group relative nav-toggle hover:bg-neutral-100 py-4 lg:py-0 rounded cursor-auto"
+          >
+            <span
+              class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
+              >Upptäck
+              <span class="lg:hidden mr-4 text-base float-right">
+                <i class="fa-sharp fa-regular fa-chevron-right"></i></span
+            ></span>
+            <!-- Dropdown -->
+
+            <ul
+              class="dropdown-menu w-full h-full lg:h-auto flex fixed lg:justify-center left-0 top-0 lg:top-14 bg-white shadow-lg z-40 p-8 lg:p-24 opacity-0 invisible lg:group-hover:opacity-100 lg:group-hover:visible overflow-auto"
+            >
+              <div
+                class="flex flex-col lg:flex-row gap-10 lg:gap-36 pt-24 lg:pt-0"
+              >
+                <!-- col 1 -->
+                <span
+                  class="group-hover:opacity-100 group-hover:translate-y-0 dropdown-image"
+                >
+                  <h3 class="hidden lg:block mb-6 text-base text-gray-500">
+                    Resurser
+                  </h3>
+                  <ul class="space-y-6 lg:space-y-3">
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Läs mer</a>
+                    </li>
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Kundberättelser</a>
+                    </li>
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Evenemang</a>
+                    </li>
+                  </ul>
+                </span>
+                <!-- col 2 -->
+                <span
+                  class="group-hover:opacity-100 group-hover:translate-y-0 dropdown-image"
+                >
+                  <h3 class="hidden lg:block mb-6 text-base text-gray-500">
+                    Platstjänster
+                  </h3>
+                  <ul class="space-y-6 lg:space-y-3">
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Hitta oss</a>
+                    </li>
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Hitta en certifierad installatör</a>
+                    </li>
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Hitta en karossverkstad</a>
+                    </li>
+                  </ul>
+                </span>
+                <!-- col 3 -->
+                <span
+                  class="group-hover:opacity-100 group-hover:translate-y-0 dropdown-image pb-12 lg:pb-0"
+                >
+                  <h3 class="hidden lg:block mb-6 text-base text-gray-500">
+                    Företag
+                  </h3>
+                  <ul class="space-y-6 lg:space-y-3">
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Om</a>
+                    </li>
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Jobb</a>
+                    </li>
+                    <li
+                      class="block w-max border-b-2 border-transparent hover:border-gray-500"
+                    >
+                      <a href="#">Investerarrelationer</a>
+                    </li>
+                  </ul>
+                </span>
+              </div>
+              <div
+                class="lg:hidden fixed top-0 right-0 bg-white p-8 cursor-auto"
+              ></div>
+              <button
+                class="backBtn-nav outline-none fixed top-5 left-10 lg:hidden z-50"
+              >
+                <i class="fa-sharp fa-regular fa-chevron-left text-base"></i>
+              </button>
+
+              <h5
+                class="lg:hidden fixed top-6 left-1/2 -translate-x-1/2 z-50 text-sm cursor-auto"
+              >
+                Upptäck
+              </h5>
+            </ul>
+          </li>
+        </div>
+        <li class="no-active">
+          <a
+            href=""
+            class="we-robot px-5 py-4 lg:py-2.5 lg:hover:bg-[rgba(23,29,60,0.07)] hover:bg-neutral-100 block lg:inline w-full bg-transparent rounded transition"
+            >We, Robot</a
+          >
+        </li>
+        <li class="flex lg:hidden">
+          <a
+            href="checkout"
+            class="we-robot px-5 py-4 lg:py-2 lg:hover:bg-[rgba(23,29,60,0.07)] hover:bg-neutral-100 w-full bg-transparent rounded transition"
+          >
+            <i class="fa-sharp fa-light fa-cart-shopping text-xl mr-2"></i>
+            Kundvagnen
+            <span
+              class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-sm font-semibold w-8 h-8 flex rounded-full shadow-2xl ml-1 float-right"
+              ><%= cartItemCount %></span
+            >
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Här -->
+    <section>
+      <!-- bild 1 - model Y-->
+      <div class="image relative">
+        <picture>
+          <source
+            srcset="/images/homepage/Homepage-Model-Y-Mobile-Global-v2.avif"
+            media="(max-width: 768px)"
+          />
+
+          <img
+            src="/images/homepage/Homepage-Model-Y-Desktop-Global-v2.png"
+            alt="Homepage Model Y"
+            class="w-full h-screen object-cover"
+          />
+        </picture>
+
+        <div class="absolute top-28 left-0 w-full text-center text-white p-4">
+          <h1 class="text-5xl font-semibold">Model Y</h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <a
+            href="design/ModelY"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+          >
+            Beställ nu
+          </a>
+          <a
+            href="design/ModelY"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+          >
+            Läs mer
+          </a>
+        </div>
+      </div>
+
+      <!-- bild 2 - model 3-->
+      <div class="image relative">
+        <picture>
+          <source
+            srcset="/images/homepage/Homepage-Model-3-mobile-US.png"
+            media="(max-width: 768px)"
+          />
+
+          <img
+            src="/images/homepage/Homepage-Model-3-Desktop-US.png"
+            alt="Homepage Model Y"
+            class="w-full h-screen object-cover"
+          />
+        </picture>
+
+        <div class="absolute top-24 left-0 w-full text-center text-white p-4">
+          <h1 class="text-5xl font-semibold">Model 3</h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <a
+            href="design/Model3"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+          >
+            Beställ nu
+          </a>
+          <a
+            href="design/Model3"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+          >
+            Läs mer
+          </a>
+        </div>
+      </div>
+
+      <!-- bild 3 - model S-->
+      <div class="image relative">
+        <picture>
+          <source
+            srcset="/images/homepage/Homepage-Model-S-mobile-US.png"
+            media="(max-width: 768px)"
+          />
+
+          <img
+            src="/images/homepage/Homepage-Model-S-Desktop-US.png"
+            alt="Homepage Model Y"
+            class="w-full h-screen object-cover"
+          />
+        </picture>
+
+        <div class="absolute top-24 left-0 w-full text-center text-white p-4">
+          <h1 class="text-5xl font-semibold">Model S</h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <a
+            href="design/ModelS"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+          >
+            Beställ nu
+          </a>
+          <a
+            href="design/ModelS"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+          >
+            Läs mer
+          </a>
+        </div>
+      </div>
+
+      <!-- bild 4 - model X-->
+      <div class="image relative">
+        <picture>
+          <source
+            srcset="/images/homepage/Homepage-Model-x-mobile-US.png"
+            media="(max-width: 768px)"
+          />
+
+          <img
+            src="/images/homepage/Homepage-Model-x-Desktop-US.png"
+            alt="Homepage Model Y"
+            class="w-full h-screen object-cover"
+          />
+        </picture>
+
+        <div class="absolute top-24 left-0 w-full text-center text-white p-4">
+          <h1 class="text-4xl mqxs:text-5xl font-semibold">Model X</h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <a
+            href="design/ModelX"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+          >
+            Beställ nu
+          </a>
+          <a
+            href="design/ModelX"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+          >
+            Läs mer
+          </a>
+        </div>
+      </div>
+
+      <!-- bild 5 - CT-->
+      <div class="image relative">
+        <picture>
+          <source
+            srcset="/images/Homepage/Homepage-Cybertruck-Mobile-v3.avif"
+            media="(max-width: 768px)"
+          />
+
+          <img
+            src="/images/Homepage/homepage-cybertruck-desktop-v3.png"
+            alt="Homepage Model Y"
+            class="w-full h-screen object-cover"
+          />
+        </picture>
+
+        <div
+          class="absolute flex items-center justify-center top-20 left-0 w-full text-center text-white p-4"
+        >
+          <h1 class="text-5xl font-semibold">
+            <img
+              src="/images/Homepage/ct_graffiti_logo.png"
+              alt=""
+              class="w-80 sm:w-96"
+            />
+          </h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <button
+            class="w-full sm:w-64 px-6 py-2.5 border-t-2 border-[#8d8d8d] bg-[#111] opacity-85 text-[#c7c7c7] hover:text-white font-semibold text-sm uppercase hover:bg-[#2c2c2c] transition wider cursor-not-allowed"
+          >
+            Beställ nu
+          </button>
+          <button
+            class="w-full sm:w-64 px-6 py-2.5 bg-[#111] opacity-85 text-[#c7c7c7] hover:text-white font-semibold text-sm uppercase hover:bg-[#2c2c2c] transition wider cursor-not-allowed"
+          >
+            Läs mer
+          </button>
+        </div>
+      </div>
+
+      <div class="image relative">
+        <video
+          muted
+          loop
+          class="scroll-video w-full h-screen object-cover"
+          preload="auto"
+        >
+          <source
+            src="/videos/Homepage-Demo-Drive-Desktop-NA.webm"
+            type="video/webm"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="absolute top-24 left-0 w-full text-center text-white p-4">
+          <h1 class="text-4xl mqxs:text-5xl font-semibold">Upplev Tesla</h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <button
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-semibold text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
+          >
+            Prokör
+          </button>
+        </div>
+      </div>
+
+      <!-- bild 6 - energi -->
+      <div class="image relative">
+        <picture>
+          <source
+            srcset="/images/homepage/Homepage-Solar-Panels-Mobile-v2.png"
+            media="(max-width: 768px)"
+          />
+
+          <img
+            src="/images/homepage/Homepage-Solar-Panels-Desktop-v2.png"
+            alt="Solar panels"
+            class="w-full h-screen object-cover"
+          />
+        </picture>
+
+        <div class="absolute top-24 left-0 w-full text-center text-white p-4">
+          <h1 class="text-4xl mqxs:text-5xl font-semibold">
+            Solenergi och Powerwall
+          </h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <button
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-semibold text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
+          >
+            Läs mer
+          </button>
+        </div>
+      </div>
+
+      <!-- bild 7- tillbehör -->
+      <div class="image relative">
+        <picture>
+          <source
+            srcset="/images/homepage/Homepage-Accessories-Mobile-EMEA-v2 (1).png"
+            media="(max-width: 768px)"
+          />
+
+          <img
+            src="/images/homepage/Homepage-Accessories-Desktop-EMEA-v2 (1).png"
+            alt="Accessories"
+            class="w-full h-screen object-cover"
+          />
+        </picture>
+
+        <div class="absolute top-24 left-0 w-full text-center text-white p-4">
+          <h1 class="text-4xl mqxs:text-5xl font-semibold">Tillbehör</h1>
+        </div>
+        <div
+          class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
+        >
+          <button
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-semibold text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
+          >
+            Handla nu
+          </button>
+        </div>
+      </div>
+
+      <!-- video 2, längst ner -->
+      <div class="image relative">
+        <video
+          muted
+          loop
+          class="scroll-video w-full h-screen object-cover"
+          preload="auto"
+        >
+          <!-- Video för desktop -->
+          <source
+            src="/videos/Homepage-We-Are-Tesla-Desktop.webm"
+            type="video/webm"
+            media="(min-width: 1024px)"
+          />
+          <!-- Video för tablet -->
+          <source
+            src="/videos/Homepage-We-Are-Tesla-Tablet.webm"
+            type="video/webm"
+            media="(min-width: 768px) and (max-width: 1023px)"
+          />
+          <!-- Video för mobil -->
+          <source
+            src="/videos/Homepage-We-Are-Tesla-Mobile.webm"
+            type="video/webm"
+            media="(max-width: 767px)"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Text och knappar -->
+        <div
+          class="absolute bottom-24 left-0 w-full md:bottom-96 md:pl-6 text-white p-4"
+        >
+          <h1 class="text-4xl mqxs:text-5xl font-semibold">Vi är Tesla</h1>
+        </div>
+        <div
+          class="absolute flex space-x-5 bottom-8 left-0 md:bottom-80 md:pl-6 w-full text-center text-white p-4"
+        >
+          <button
+            class="w-full sm:w-48 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition cursor-not-allowed"
+          >
+            Jobba hos Tesla
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--där -->
+    <section class="max-w-2xl my-8 mx-auto px-8">
+      <p class="text-xs text-gray-500 font-medium text-center leading-loose">
+        Den fasta nominella räntan på 0,00 % för Model Y eller den rörliga
+        nominella räntan på 1,99 % för Model 3 med bakhjulsdrift och Model 3
+        Long Range med fyrhjulsdrift gäller endast för den första bilen som
+        tilldelas dig samt levereras senast den 31 december 2024.
+        Finansieringserbjudandet är begränsat och endast tillgängligt så länge
+        lagret räcker. Fastränteerbjudandet är en produkt från DNB Bank ASA och
+        erbjudandet med rörlig ränta är en produkt från DNB Bank ASA och
+        Santander Consumer Bank. Den rörliga räntan kan ej gå under 0 %.
+        <br />
+        <br />
+
+        Privat avbetalning: 0,00 % fast exempelränta, 0,26 % effektiv ränta, för
+        ett fordonspris på 554 170 kr, 36 månader, 20 % handpenning, 53 %
+        restvärde, 60 kr administrationsavgift och 695 kr uppläggningsavgift.
+        Rekommenderat restvärde vid 10 000 km körning per år, restvärde
+        garanteras inte av Tesla. Avbetalning med en resterande skuld som ska
+        betalas i slutet av den ordinarie kreditperioden. I den totala
+        kreditsumman ingår restskuld. Räntan på 0,00 % gäller endast under
+        ordinarie kreditperiod. Model Y som säljs i Sverige har tre års
+        skadegaranti som ingår i grundpriset. Fordonet levereras med två veckors
+        försäkring utan kostnad. Kunder kan lära sig mer om InsureMyTesla och få
+        en premiumoffert från TryggHansa.
+      </p>
+    </section>
+    <footer class="image relative">
+      <ul
+        class="flex flex-col align-middle justify-center text-center sm:flex-row gap-2 space-x-4 text-xs pb-10 text-gray-700 font-semibold leading-loose"
+      >
+        <li>Tesla © 2024</li>
+        <a href="#"><li>Kontakt</li></a>
+        <a href="#"><li>Nyheter</li></a>
+        <a href="#"><li>Platser</li></a>
+        <a href="#"><li>Få uppdateringar</li></a>
+        <a href="#"><li>Integritet & juridisk information</li></a>
+      </ul>
+      <div class="flex w-full justify-center items-center pb-10">
+        <button
+          id="scrollTopBtn"
+          class="px-2 text-sm py-1 hover:text-gray-800 transition font-medium text-gray-500 tracking-wider"
+          onclick="scrollToTop()"
+        >
+          Till toppen<i
+            class="fa-sharp fa-regular fa-arrow-up text-base ml-1.5"
+          ></i>
+        </button>
+      </div>
+    </footer>
+    <div class="overlay"></div>
+    <div id="pageLoader" class="loader">
+      <div class="spinner">
+        <div class="spinner-inner">
+          <img src="/images/loaderLogo.webp" alt="Logo" class="spinner-logo" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
