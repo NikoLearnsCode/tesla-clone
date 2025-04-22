@@ -700,6 +700,34 @@ video {
   top: 1.5rem;
 }
 
+.-left-3 {
+  left: -0.75rem;
+}
+
+.right-3 {
+  right: 0.75rem;
+}
+
+.left-3 {
+  left: 0.75rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -1141,6 +1169,10 @@ video {
   height: 100vh;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1151,6 +1183,10 @@ video {
 
 .w-14 {
   width: 3.5rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-32 {
@@ -1198,8 +1234,20 @@ video {
   width: max-content;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
+.min-w-28 {
+  min-width: 7rem;
+}
+
 .min-w-32 {
   min-width: 8rem;
+}
+
+.max-w-28 {
+  max-width: 7rem;
 }
 
 .max-w-2xl {
@@ -1589,6 +1637,22 @@ video {
   gap: 1.5rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
@@ -1641,6 +1705,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .overflow-auto {
@@ -1916,6 +1986,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -1964,6 +2039,10 @@ video {
   padding-left: 1.25rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1994,6 +2073,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pb-56 {
+  padding-bottom: 14rem;
 }
 
 .text-center {
@@ -2129,6 +2212,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -2243,11 +2330,11 @@ video {
 
 .spinner {
   position: relative;
-  border: 7px solid #f3f3f3;
-  border-top: 7px solid #333;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #333;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   animation: spin 1s linear infinite;
   display: flex;
   justify-content: center;
@@ -2265,7 +2352,7 @@ video {
 }
 
 .spinner-logo {
-  width: 60px;
+  width: 45px;
   height: auto;
   animation: counter-spin 1s linear infinite;
   pointer-events: none;
@@ -2525,6 +2612,12 @@ video {
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .mqxs\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .mqxs\:p-8 {
     padding: 2rem;
   }
@@ -2632,6 +2725,18 @@ video {
     bottom: 24rem;
   }
 
+  .md\:w-32 {
+    width: 8rem;
+  }
+
+  .md\:min-w-32 {
+    min-width: 8rem;
+  }
+
+  .md\:max-w-32 {
+    max-width: 8rem;
+  }
+
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -2669,6 +2774,14 @@ video {
 
   .mq850\:mt-16 {
     margin-top: 4rem;
+  }
+
+  .mq850\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .mq850\:mt-4 {
+    margin-top: 1rem;
   }
 
   .mq850\:flex {
@@ -2723,6 +2836,10 @@ video {
     justify-content: center;
   }
 
+  .mq850\:gap-24 {
+    gap: 6rem;
+  }
+
   .mq850\:space-x-10 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -2749,6 +2866,10 @@ video {
 
   .mq850\:p-8 {
     padding: 2rem;
+  }
+
+  .mq850\:p-3 {
+    padding: 0.75rem;
   }
 
   .mq850\:px-0 {
@@ -2805,6 +2926,11 @@ video {
   .mq850\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .mq850\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .mq850\:shadow-md {

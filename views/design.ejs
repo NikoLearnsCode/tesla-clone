@@ -30,9 +30,9 @@
       }
     </style>
     <header
-      class="flex justify-between items-center py-5 mq850:py-5 px-8 mq850:px-14 bg-white mq850:fixed top-0 left-0 w-full z-50"
+      class="flex justify-between items-center h-14 px-6 mq850:px-14 bg-white mq850:fixed top-0 left-0 w-full z-50"
     >
-      <a href="/" class="w-32 min-w-32 max-w-32">
+      <a href="/" class="w-28 min-w-28 max-w-28 md:w-32 md:min-w-32 md:max-w-32 ">
         <svg class="" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="currentColor"
@@ -47,7 +47,7 @@
         >
           <i class="fa-sharp fa-light fa-cart-shopping text-xl"></i>
           <span
-            class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-sm font-semibold w-6 h-6 flex rounded-full shadow-2xl ml-1"
+            class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-xs font-semibold w-6 h-6 flex rounded-full shadow-2xl ml-1"
             ><%= cartItemCount %></span
           >
         </a>
@@ -68,22 +68,22 @@
           />
           <button
             id="prev-button"
-            class="image-btn prev transition -translate-x-5 outline-none opacity-0 duration-700 absolute top-1/2 left-4 mq850:left-8 xl:left-20 bg-neutral-100 py-1 px-2.5 rounded"
+            class="image-btn prev transition -translate-x-5 outline-none opacity-0 duration-700 absolute text-sm top-1/2 left-2 mq850:left-8 xl:left-20 bg-neutral-100 py-1 px-2.5 rounded"
           >
             <i class="fa-sharp fa-light fa-chevron-left"></i>
           </button>
           <button
             id="next-button"
-            class="image-btn next transition translate-x-5 opacity-0 duration-700 outline-none absolute top-1/2 right-4 mq850:right-8 xl:right-20 bg-neutral-100 py-1 px-2.5 rounded"
+            class="image-btn next transition translate-x-5 opacity-0 duration-700 outline-none absolute top-1/2 right-2  mq850:right-8 xl:right-20 bg-neutral-100 py-1 px-2.5 rounded"
           >
-            <i class="fa-sharp fa-light fa-chevron-right"></i>
+            <i class="fa-sharp text-sm fa-light fa-chevron-right"></i>
           </button>
         </div>
       </div>
       <!-- Höger sida -->
       <div
         id="details"
-        class="product-detail-details flex flex-col gap-24 w-full mq850:min-w-[400px] mq850:max-w-[400px] mb-10 mqxs:mb-44 mq850:pl-12 px-5 mq850:px-0 mq850:mt-16"
+        class="product-detail-details flex flex-col gap-16 mq850:gap-24 w-full mq850:min-w-[400px] mq850:max-w-[400px] mb-10 mqxs:mb-44 mq850:pl-12 px-5 mq850:px-0 mq850:mt-16"
       >
         <div id="variant-specs" class="product-detail-container-col-1">
           <h1
@@ -123,47 +123,47 @@
             <span
               class="current-color-price text-gray-600 mb-1 text-sm font-medium"
             ></span>
-            <h5 id="current-color" class="text-mq850 text-xl font-medium"></h5>
+            <h5 id="current-color" class=" text-lg mq850:text-xl font-medium"></h5>
 
             <div
               id="color-options"
-              class="flex justify-center space-x-1 mq850:space-x-3 mt-6 cursor-pointer"
+              class="flex justify-center space-x-2 mq850:space-x-3 mt-4 mq850:mt-6 cursor-pointer"
             >
               <img
                 src="/images/product-detail-choices/Paint_StealthGrey.png"
                 alt=""
-                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                class="color-option w-11 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
                 data-color="gray"
               />
               <img
                 src="/images/product-detail-choices/Paint_White.png"
                 alt=""
-                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full transition p-1"
+                class="color-option w-11 mq850:w-12 border-2 border-transparent rounded-full transition p-1"
                 data-color="white"
               />
               <img
                 src="/images/product-detail-choices/Paint_Black.png"
                 alt=""
-                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                class="color-option w-11 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
                 data-color="black"
               />
               <img
                 src="/images/product-detail-choices/Paint_Blue.png"
                 alt=""
-                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                class="color-option w-11 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
                 data-color="blue"
               />
               <img
                 src="/images/product-detail-choices/Red_Paint_R2.png"
                 alt=""
-                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                class="color-option w-11 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
                 data-color="red"
               />
 
               <img
                 src="/images/product-detail-choices/Paint_Silver.png"
                 alt=""
-                class="color-option w-12 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
+                class="color-option w-11 mq850:w-12 border-2 border-transparent rounded-full p-1 transition"
                 data-color="silver"
               />
             </div>
@@ -175,22 +175,22 @@
           ></span>
           <h5
             id="current-wheel"
-            class="text-center block text-xl font-medium"
+            class="text-center block text-lg mq850:text-xl font-medium"
           ></h5>
           <div id="wheel-options" class="">
             <span
-              class="flex mt-4 justify-center mqxs:space-x-4 space-x-3 items-center cursor-pointer"
+              class="flex mt-2 mq850:mt-4 justify-center mqxs:space-x-3 space-x-2 items-center cursor-pointer"
             >
               <img
                 src="/images/product-detail-choices/wheel_19.png"
                 alt=""
-                class="wheel-option w-14 mq850:w-14 border-2 border-transparent rounded-full p-1 transition"
+                class="wheel-option w-12 mq850:w-14 border-2 border-transparent rounded-full p-1 transition"
                 data-wheel="Standard"
               />
               <img
                 src="/images/product-detail-choices/wheel_21.png"
                 alt=""
-                class="wheel-option w-14 mq850:w-14 border-2 border-transparent rounded-full p-1 transition"
+                class="wheel-option w-12 mq850:w-14 border-2 border-transparent rounded-full p-1 transition"
                 data-wheel="Premium"
               />
             </span>
@@ -202,7 +202,7 @@
             car.traction[0].price.toLocaleString() + ' kr' %></span
           >
 
-          <h5 class="block text-xl font-medium"><%= car.traction[0].name %></h5>
+          <h5 class="block text-lg mq850:text-xl font-medium"><%= car.traction[0].name %></h5>
           <p class="text-sm mt-2 tracking-wide">
             <%= car.traction[0].description %>
           </p>
@@ -211,7 +211,7 @@
           id="autopilot-container"
           class="relative font-medium flex flex-col"
         >
-          <h4 class="text-center block text-xl font-medium">Autopilot-paket</h4>
+          <h4 class="text-center block text-lg mq850:text-xl font-medium">Autopilot-paket</h4>
 
           <% car.autopilotPackages.forEach((pkg, i) => { %>
           <div
@@ -220,7 +220,7 @@
           >
             <h5 class="mb-2 text-sm">
               <%= pkg.name %>
-              <span class="float-right text-xs mqxs:text-sm font-medium">
+              <span class="float-right text-xs mq850:text-sm font-medium">
                 <%= pkg.price === 0 ? 'Inkluderat' : pkg.price.toLocaleString()
                 + ' kr' %>
               </span>
@@ -246,7 +246,7 @@
 
             <button
               id="submit-car-config"
-              class="flex-1 mqxs:flex-none mqxs:w-52 border-2 bg-blue-500 text-white border-blue-500 hover:border-blue-600 hover:text-white hover:bg-blue-600 text-sm font-semibold transition py-2 rounded"
+              class="flex-1 mqxs:flex-none mqxs:w-52 border-2 bg-blue-500 text-white border-blue-500 hover:border-blue-600 hover:text-white hover:bg-blue-600 text-sm font-medium transition py-2 rounded"
             >
               Beställ nu
             </button>

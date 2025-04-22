@@ -24,7 +24,7 @@
       id="mainNav"
       class="navbar fixed top-0 left-0 flex w-full flex-row-reverse justify-between items-center px-8 h-14 md:px-14 text-white z-50 bg-transparent font-semibold"
     >
-      <a href="" class="w-32 min-w-32 max-w-32 order-3">
+      <a href="" class="w-28 min-w-28 max-w-28 md:w-32 md:min-w-32 md:max-w-32 order-3">
         <svg class="" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="currentColor"
@@ -41,14 +41,14 @@
         >
           <i class="fa-sharp fa-light fa-cart-shopping text-xl"></i>
           <span
-            class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-sm font-semibold w-6 h-6 flex rounded-full shadow-2xl ml-1"
+            class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-xs font-semibold w-6 h-6 flex rounded-full shadow-2xl ml-1"
             ><%= cartItemCount %></span
           >
         </a>
       </div>
       <button
         id="mobileMenuBtn"
-        class="lg:hidden text-sm font-semibold outline-none px-6 py-2.5 bg-[rgba(23,29,60,0.13)] hover:bg-[rgba(23,29,60,0.2)] rounded transition"
+        class="lg:hidden text-sm font-semibold outline-none px-6 py-1.5 bg-[rgba(23,29,60,0.13)] hover:bg-[rgba(23,29,60,0.2)] rounded transition"
       >
         Meny
       </button>
@@ -57,7 +57,7 @@
 
       <ul
         id="mainNavUl"
-        class="opacity-0 invisible lg:opacity-100 lg:visible lg:order-2 lg:flex lg:flex-row lg:justify-center lg:items-center lg:space-x-0 text-base lg:text-sm fixed top-0 left-0 w-full h-screen bg-white lg:bg-transparent lg:h-auto lg:relative overflow-auto lg:overflow-visible lg:text-inherit text-gray-700 flex-col pt-24 lg:pt-0 space-y-2 lg:space-y-0 py-4 px-4 lg:py-0 lg:px-0 z-50"
+        class="opacity-0 invisible lg:opacity-100 lg:visible lg:order-2 lg:flex lg:flex-row lg:justify-center font-medium  lg:items-center lg:space-x-0 text-sm fixed top-0 left-0 w-full h-screen bg-white lg:bg-transparent lg:h-auto lg:relative overflow-auto lg:overflow-visible lg:text-inherit text-gray-700 flex-col pt-24 lg:pt-0 space-y-2 lg:space-y-0 py-4 px-4 lg:py-0 lg:px-0 z-50"
       >
         <button
           class="lg:hidden close-nav outline-none fixed top-6 right-7 z-50"
@@ -69,9 +69,9 @@
           class="group relative nav-toggle hover:bg-gray-100 py-4 lg:py-0 rounded"
         >
           <span
-            class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 wrounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition rounded cursor-pointer"
+            class="px-5 py-2 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 wrounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition rounded cursor-pointer"
             >Bilar
-            <span class="lg:hidden mr-4 text-base float-right">
+            <span class="lg:hidden mr-4 text-sm float-right">
               <i class="fa-sharp fa-regular fa-chevron-right"></i></span
           ></span>
           <!-- Dropdown -->
@@ -295,9 +295,9 @@
           class="group relative nav-toggle hover:bg-neutral-100 py-4 lg:py-0 rounded cursor-auto"
         >
           <span
-            class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
+            class="px-5 py-2 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
             >Energi
-            <span class="lg:hidden mr-4 text-base float-right">
+            <span class="lg:hidden mr-4 text-sm float-right">
               <i class="fa-sharp fa-regular fa-chevron-right"></i></span
           ></span>
           <!-- Dropdown Energi -->
@@ -383,9 +383,9 @@
           class="group relative nav-toggle hover:bg-neutral-100 py-4 lg:py-0 rounded cursor-auto"
         >
           <span
-            class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
+            class="px-5 py-2 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
             >Laddning
-            <span class="lg:hidden mr-4 text-base float-right">
+            <span class="lg:hidden mr-4 text-sm float-right">
               <i class="fa-sharp fa-regular fa-chevron-right"></i></span
           ></span>
           <!-- Dropdown -->
@@ -498,9 +498,9 @@
             class="group relative nav-toggle hover:bg-neutral-100 py-4 lg:py-0 rounded cursor-auto"
           >
             <span
-              class="px-5 py-2.5 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
+              class="px-5 py-2 lg:hover:bg-gray-100 lg:group-hover:bg-gray-100 rounded lg:after:content-[''] lg:after:absolute lg:after:left-0 lg:after:right-0 lg:after:top-full lg:after:h-6 lg:after:pointer-events-auto transition cursor-pointer"
               >Upptäck
-              <span class="lg:hidden mr-4 text-base float-right">
+              <span class="lg:hidden mr-4 text-sm float-right">
                 <i class="fa-sharp fa-regular fa-chevron-right"></i></span
             ></span>
             <!-- Dropdown -->
@@ -604,22 +604,22 @@
             </ul>
           </li>
         </div>
-        <li class="no-active">
+        <!-- <li class="no-active">
           <a
             href=""
             class="we-robot px-5 py-4 lg:py-2.5 lg:hover:bg-[rgba(23,29,60,0.07)] hover:bg-neutral-100 block lg:inline w-full bg-transparent rounded transition"
             >We, Robot</a
           >
-        </li>
+        </li> -->
         <li class="flex lg:hidden">
           <a
             href="checkout"
-            class="we-robot px-5 py-4 lg:py-2 lg:hover:bg-[rgba(23,29,60,0.07)] hover:bg-neutral-100 w-full bg-transparent rounded transition"
+            class="we-robot pl-5 pr-2 py-2.5 mt-8 lg:py-2 lg:hover:bg-[rgba(23,29,60,0.07)] hover:bg-neutral-100 w-full bg-transparent rounded transition"
           >
             <i class="fa-sharp fa-light fa-cart-shopping text-xl mr-2"></i>
-            Kundvagnen
+            Kassa
             <span
-              class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-sm font-semibold w-8 h-8 flex rounded-full shadow-2xl ml-1 float-right"
+              class="items-center justify-center  bg-[rgba(23,29,60,0.09)] text-xs font-semibold w-8 h-8 flex rounded-full shadow-2xl ml-1 float-right"
               ><%= cartItemCount %></span
             >
           </a>
@@ -651,13 +651,13 @@
         >
           <a
             href="design/ModelY"
-            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-medium text-sm rounded hover:bg-blue-600 transition tracking-wide"
           >
             Beställ nu
           </a>
           <a
             href="design/ModelY"
-            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-medium text-gray-800 rounded hover:bg-gray-200 transition"
           >
             Läs mer
           </a>
@@ -687,13 +687,13 @@
         >
           <a
             href="design/Model3"
-            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-medium text-sm rounded hover:bg-blue-600 transition tracking-wide"
           >
             Beställ nu
           </a>
           <a
             href="design/Model3"
-            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-medium text-gray-800 rounded hover:bg-gray-200 transition"
           >
             Läs mer
           </a>
@@ -723,13 +723,13 @@
         >
           <a
             href="design/ModelS"
-            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-medium text-sm rounded hover:bg-blue-600 transition tracking-wide"
           >
             Beställ nu
           </a>
           <a
             href="design/ModelS"
-            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-medium text-gray-800 rounded hover:bg-gray-200 transition"
           >
             Läs mer
           </a>
@@ -759,13 +759,13 @@
         >
           <a
             href="design/ModelX"
-            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-semibold text-sm rounded hover:bg-blue-600 transition tracking-wide"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-500 text-white font-medium text-sm rounded hover:bg-blue-600 transition tracking-wide"
           >
             Beställ nu
           </a>
           <a
             href="design/ModelX"
-            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition"
+            class="w-full sm:w-64 px-6 py-2.5 bg-gray-100 text-sm font-medium text-gray-800 rounded hover:bg-gray-200 transition"
           >
             Läs mer
           </a>
@@ -802,12 +802,12 @@
           class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
         >
           <button
-            class="w-full sm:w-64 px-6 py-2.5 border-t-2 border-[#8d8d8d] bg-[#111] opacity-85 text-[#c7c7c7] hover:text-white font-semibold text-sm uppercase hover:bg-[#2c2c2c] transition wider cursor-not-allowed"
+            class="w-full sm:w-64 px-6 py-2.5 border-t-2 border-[#8d8d8d] bg-[#111] opacity-85 text-[#c7c7c7] hover:text-white font-medium text-sm uppercase hover:bg-[#2c2c2c] transition wider cursor-not-allowed"
           >
             Beställ nu
           </button>
           <button
-            class="w-full sm:w-64 px-6 py-2.5 bg-[#111] opacity-85 text-[#c7c7c7] hover:text-white font-semibold text-sm uppercase hover:bg-[#2c2c2c] transition wider cursor-not-allowed"
+            class="w-full sm:w-64 px-6 py-2.5 bg-[#111] opacity-85 text-[#c7c7c7] hover:text-white font-medium text-sm uppercase hover:bg-[#2c2c2c] transition wider cursor-not-allowed"
           >
             Läs mer
           </button>
@@ -837,7 +837,7 @@
           class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
         >
           <button
-            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-semibold text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-medium text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
           >
             Prokör
           </button>
@@ -868,7 +868,7 @@
           class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
         >
           <button
-            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-semibold text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-medium text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
           >
             Läs mer
           </button>
@@ -897,7 +897,7 @@
           class="absolute flex justify-center space-x-5 bottom-8 left-0 w-full text-center text-white p-4"
         >
           <button
-            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-semibold text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
+            class="w-full sm:w-64 px-6 py-2.5 bg-blue-600 text-white font-medium text-sm rounded hover:bg-blue-500 transition cursor-not-allowed"
           >
             Handla nu
           </button>
@@ -945,7 +945,7 @@
           class="absolute flex space-x-5 bottom-8 left-0 md:bottom-80 md:pl-6 w-full text-center text-white p-4"
         >
           <button
-            class="w-full sm:w-48 px-6 py-2.5 bg-gray-100 text-sm font-semibold text-gray-800 rounded hover:bg-gray-200 transition cursor-not-allowed"
+            class="w-full sm:w-48 px-6 py-2.5 bg-gray-100 text-sm font-medium text-gray-800 rounded hover:bg-gray-200 transition cursor-not-allowed"
           >
             Jobba hos Tesla
           </button>
@@ -955,50 +955,23 @@
 
     <!--där -->
     <section class="max-w-2xl my-8 mx-auto px-8">
-      <p class="text-xs text-gray-500 font-medium text-center leading-loose">
-        Den fasta nominella räntan på 0,00 % för Model Y eller den rörliga
-        nominella räntan på 1,99 % för Model 3 med bakhjulsdrift och Model 3
-        Long Range med fyrhjulsdrift gäller endast för den första bilen som
-        tilldelas dig samt levereras senast den 31 december 2024.
-        Finansieringserbjudandet är begränsat och endast tillgängligt så länge
-        lagret räcker. Fastränteerbjudandet är en produkt från DNB Bank ASA och
-        erbjudandet med rörlig ränta är en produkt från DNB Bank ASA och
-        Santander Consumer Bank. Den rörliga räntan kan ej gå under 0 %.
-        <br />
-        <br />
-
-        Privat avbetalning: 0,00 % fast exempelränta, 0,26 % effektiv ränta, för
-        ett fordonspris på 554 170 kr, 36 månader, 20 % handpenning, 53 %
-        restvärde, 60 kr administrationsavgift och 695 kr uppläggningsavgift.
-        Rekommenderat restvärde vid 10 000 km körning per år, restvärde
-        garanteras inte av Tesla. Avbetalning med en resterande skuld som ska
-        betalas i slutet av den ordinarie kreditperioden. I den totala
-        kreditsumman ingår restskuld. Räntan på 0,00 % gäller endast under
-        ordinarie kreditperiod. Model Y som säljs i Sverige har tre års
-        skadegaranti som ingår i grundpriset. Fordonet levereras med två veckors
-        försäkring utan kostnad. Kunder kan lära sig mer om InsureMyTesla och få
-        en premiumoffert från TryggHansa.
-      </p>
+      
     </section>
     <footer class="image relative">
       <ul
-        class="flex flex-col align-middle justify-center text-center sm:flex-row gap-2 space-x-4 text-xs pb-10 text-gray-700 font-semibold leading-loose"
+        class="flex flex-col align-middle justify-center text-center sm:flex-row gap-2 space-x-4 text-base pb-6 pt-4 underline text-gray-500 font-medium leading-loose"
       >
-        <li>Tesla © 2024</li>
-        <a href="#"><li>Kontakt</li></a>
-        <a href="#"><li>Nyheter</li></a>
-        <a href="#"><li>Platser</li></a>
-        <a href="#"><li>Få uppdateringar</li></a>
-        <a href="#"><li>Integritet & juridisk information</li></a>
+        <li>Skolprojekt 2024 - NC</li>
+       
       </ul>
-      <div class="flex w-full justify-center items-center pb-10">
+      <div class="flex w-full justify-center items-center pb-6">
         <button
           id="scrollTopBtn"
           class="px-2 text-sm py-1 hover:text-gray-800 transition font-medium text-gray-500 tracking-wider"
           onclick="scrollToTop()"
         >
           Till toppen<i
-            class="fa-sharp fa-regular fa-arrow-up text-base ml-1.5"
+            class="fa-sharp fa-regular fa-arrow-up text-sm ml-1.5"
           ></i>
         </button>
       </div>

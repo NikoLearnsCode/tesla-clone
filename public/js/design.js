@@ -59,7 +59,7 @@ function createMotorOptions(specs) {
 
   specs.forEach((spec, index) => {
     const motorOption = document.createElement('div');
-    motorOption.className = `motor-option cursor-pointer flex justify-between text-sm mqxs:text-sm p-3 font-medium mt-${
+    motorOption.className = `motor-option cursor-pointer flex justify-between text-xs mq850:text-sm p-3 font-medium mt-${
       index === 0 ? '10' : '3'
     } border transition text-gray-500 shadow-sm  rounded`;
     motorOption.setAttribute('data-motor', spec.name);
