@@ -22,7 +22,7 @@
   <body>
     <nav
       id="mainNav"
-      class="navbar fixed top-0 left-0 flex w-full flex-row-reverse justify-between items-center  px-8 h-14 md:px-14 text-white z-50 bg-transparent font-semibold"
+      class="navbar fixed top-0 left-0 flex w-full flex-row-reverse justify-between items-center px-8 h-14 md:px-14 text-white z-50 bg-transparent font-semibold"
     >
       <a href="" class="w-32 min-w-32 max-w-32 order-3">
         <svg class="" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
@@ -814,11 +814,13 @@
         </div>
       </div>
 
-      <div class="image relative">
+      <div class="scroll-video image relative">
         <video
-          muted
+          autoplay
           loop
-          class="scroll-video w-full h-screen object-cover"
+          muted
+          playsinline
+          class="w-full h-screen object-cover"
           preload="auto"
         >
           <source
@@ -905,8 +907,10 @@
       <!-- video 2, längst ner -->
       <div class="image relative">
         <video
-          muted
+          autoplay
           loop
+          muted
+          playsinline
           class="scroll-video w-full h-screen object-cover"
           preload="auto"
         >
