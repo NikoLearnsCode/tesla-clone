@@ -30,7 +30,7 @@
       }
     </style>
     <header
-      class="flex justify-between items-center h-14 px-6 mq850:px-14 bg-white mq850:fixed top-0 left-0 w-full z-50"
+      class="flex justify-between items-center  h-14 px-5 mq850:px-8 bg-white mq850:fixed top-0 left-0 w-full z-50"
     >
       <a href="/" class="w-28 min-w-28 max-w-28 md:w-32 md:min-w-32 md:max-w-32 ">
         <svg class="" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
@@ -83,12 +83,12 @@
       <!-- Höger sida -->
       <div
         id="details"
-        class="product-detail-details flex flex-col gap-16 mq850:gap-24 w-full mq850:min-w-[400px] mq850:max-w-[400px] mb-10 mqxs:mb-44 mq850:pl-12 px-5 mq850:px-0 mq850:mt-16"
+        class="product-detail-details flex flex-col gap-16 mq850:gap-24 w-full mq850:min-w-[400px] mq850:max-w-[400px] mb-10 mqxs:mb-44 mq850:pl-12 px-6 mq850:px-0 mq850:mt-16"
       >
         <div id="variant-specs" class="product-detail-container-col-1">
           <h1
             id="model-title"
-            class="text-center text-4xl mq850:text-5xl font-medium pt-20 mq850:pt-10 pb-5"
+            class="text-center text-3xl mq850:text-4xl font-medium pt-20 mq850:pt-10 pb-2 mq850:pb-5"
           >
             <%= model.slice(0, 5) + '\n' + model.slice(5) %>
           </h1>
@@ -98,17 +98,17 @@
             class="flex justify-around mq850:justify-center mq850:space-x-10 mt-4 text-center"
           >
             <li id="range-spec">
-              <span class="range text-xl mq850:text-2xl font-medium">0</span>
+              <span class="range text-lg mq850:text-2xl font-medium">0</span>
               <span class="text-xs font-medium">km</span>
               <span class="block text-xs font-normal">Räckvidd</span>
             </li>
             <li id="speed-spec">
-              <span class="speed text-xl mq850:text-2xl font-medium">0</span>
+              <span class="speed text-lg mq850:text-2xl font-medium">0</span>
               <span class="text-xs font-medium">km/h</span>
               <span class="block text-xs font-normal">Topphastighet</span>
             </li>
             <li id="acceleration-spec">
-              <span class="acceleration text-xl mq850:text-2xl font-medium"
+              <span class="acceleration text-lg mq850:text-2xl font-medium"
                 >0</span
               >
               <span class="text-xs font-medium">s</span>
@@ -211,7 +211,7 @@
           id="autopilot-container"
           class="relative font-medium flex flex-col"
         >
-          <h4 class="text-center block text-lg mq850:text-xl font-medium">Autopilot-paket</h4>
+          <h4 class="text-center block text-lg mq850:text-xl font-medium ">Autopilot-paket</h4>
 
           <% car.autopilotPackages.forEach((pkg, i) => { %>
           <div

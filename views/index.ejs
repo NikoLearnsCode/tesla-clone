@@ -22,9 +22,12 @@
   <body>
     <nav
       id="mainNav"
-      class="navbar fixed top-0 left-0 flex w-full flex-row-reverse justify-between items-center px-8 h-14 md:px-14 text-white z-50 bg-transparent font-semibold"
+      class="navbar fixed top-0 left-0 flex w-full flex-row-reverse justify-between items-center h-14 md:px-8 px-5 text-white z-50 bg-transparent font-medium"
     >
-      <a href="" class="w-28 min-w-28 max-w-28 md:w-32 md:min-w-32 md:max-w-32 order-3">
+      <a
+        href=""
+        class="w-28 min-w-28 max-w-28 md:w-32 md:min-w-32 md:max-w-32 order-3"
+      >
         <svg class="" viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg">
           <path
             fill="currentColor"
@@ -57,7 +60,7 @@
 
       <ul
         id="mainNavUl"
-        class="opacity-0 invisible lg:opacity-100 lg:visible lg:order-2 lg:flex lg:flex-row lg:justify-center font-medium  lg:items-center lg:space-x-0 text-sm fixed top-0 left-0 w-full h-screen bg-white lg:bg-transparent lg:h-auto lg:relative overflow-auto lg:overflow-visible lg:text-inherit text-gray-700 flex-col pt-24 lg:pt-0 space-y-2 lg:space-y-0 py-4 px-4 lg:py-0 lg:px-0 z-50"
+        class="opacity-0 invisible lg:opacity-100 lg:visible lg:order-2 lg:flex lg:flex-row lg:justify-center font-medium lg:items-center lg:space-x-0 text-sm fixed top-0 left-0 w-full h-screen bg-white lg:bg-transparent lg:h-auto lg:relative overflow-auto lg:overflow-visible lg:text-inherit text-gray-700 flex-col pt-24 lg:pt-0 space-y-2 lg:space-y-0 py-4 px-4 lg:py-0 lg:px-0 z-50"
       >
         <button
           class="lg:hidden close-nav outline-none fixed top-6 right-7 z-50"
@@ -619,7 +622,7 @@
             <i class="fa-sharp fa-light fa-cart-shopping text-xl mr-2"></i>
             Kassa
             <span
-              class="items-center justify-center  bg-[rgba(23,29,60,0.09)] text-xs font-semibold w-8 h-8 flex rounded-full shadow-2xl ml-1 float-right"
+              class="items-center justify-center bg-[rgba(23,29,60,0.09)] text-xs font-semibold w-8 h-8 flex rounded-full shadow-2xl ml-1 float-right"
               ><%= cartItemCount %></span
             >
           </a>
@@ -954,20 +957,17 @@
     </section>
 
     <!--där -->
-    <section class="max-w-2xl my-8 mx-auto px-8">
-      
-    </section>
+    <section class="max-w-2xl my-8 mx-auto px-8"></section>
     <footer class="image relative">
       <ul
-        class="flex flex-col align-middle justify-center text-center sm:flex-row gap-2 space-x-4 text-base pb-6 pt-4 underline text-gray-500 font-medium leading-loose"
+        class="flex flex-col align-middle justify-center text-center sm:flex-row gap-2 space-x-4 text-sm pb-6 text-gray-800 font-medium"
       >
         <li>Skolprojekt 2024 - NC</li>
-       
       </ul>
       <div class="flex w-full justify-center items-center pb-6">
         <button
           id="scrollTopBtn"
-          class="px-2 text-sm py-1 hover:text-gray-800 transition font-medium text-gray-500 tracking-wider"
+          class="px-2 text-xs uppercase py-1 hover:text-gray-800 transition font-semibold text-gray-500 tracking-wider"
           onclick="scrollToTop()"
         >
           Till toppen<i
