@@ -1,1 +1,1 @@
-https://teslaclone-production.up.railway.app/
+https://tesla-clone-ok3b.onrender.com/
