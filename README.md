@@ -1,6 +1,6 @@
 ## Tesla-klon (2025)
 
-**Stack:** JavaScript, Tailwind, Express, SQLite  
+**Stack:** JavaScript, Tailwind, Express, EJS, SQLite  
 
 Skolprojekt inspirerat av Teslas officiella webbplats. Arbetade enligt agila metoder (Scrum) med sprintplanering, dagliga standups och retrospektiv.
 
