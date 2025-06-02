@@ -2,7 +2,7 @@
 
 **Stack:** JavaScript, Tailwind, Express, SQLite  
 
-Gruppbaserat skolprojekt inspirerat av Teslas officiella webbplats. Arbetade enligt agila metoder (Scrum) med sprintplanering, dagliga standups och retrospektiv.
+Skolprojekt inspirerat av Teslas officiella webbplats. Arbetade enligt agila metoder (Scrum) med sprintplanering, dagliga standups och retrospektiv.
 
 - Användaren kan konfigurera sin egen Tesla-modell direkt på sidan.
 - Backend byggd med Express och SQLite.
