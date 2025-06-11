@@ -7,10 +7,11 @@ Choose drivetrain options, exterior colors, wheels, and additional features – 
 🔗 [View Live Project](https://tesla-clone-ok3b.onrender.com)
 
 **Frontend:**
-- Vanilla JavaScript  
-- Tailwind CSS  
+- JavaScript  
+- Tailwind CSS
+- EJS 
 
 **Backend & Database:**
 - Express.js  
 - SQLite  
-- EJS Templates
+
