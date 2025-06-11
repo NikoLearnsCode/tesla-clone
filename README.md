@@ -1,10 +1,16 @@
-## Tesla-klon (2025)
+# Tesla Clone (2025)
 
-**Stack:** `JavaScript`, `Tailwind`, `Express`, `EJS`, `SQLite`
+An interactive web app that lets users configure various **Tesla models** in real time.  
+Choose drivetrain options, exterior colors, wheels, and additional features – with dynamic pricing updates as you customize.
 
-Interaktiv webbapplikation där användaren kan konfigurera olika **Tesla-modeller**.  
-Välj motoralternativ, exteriörfärg, fälgar och andra tillval – och se priset uppdateras i realtid.
+🚀 Hosted on **Render (free tier)** – may experience a short delay on first load due to cold starts.  
+🔗 [View Live Project](https://tesla-clone-ok3b.onrender.com)
 
-Hostad på **Render (gratisnivå)** – viss uppstartstid kan förekomma vid inaktivitet (s.k. cold start)
+**Frontend:**
+- Vanilla JavaScript  
+- Tailwind CSS  
 
-🔗 [Se projektet live](https://tesla-clone-ok3b.onrender.com)
+**Backend & Database:**
+- Express.js  
+- SQLite  
+- EJS Templates
