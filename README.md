@@ -3,13 +3,9 @@
 An interactive web app that lets users configure various **Tesla models** in real time.  
 Choose drivetrain options, exterior colors, wheels, and additional features – with dynamic pricing updates as you customize.
 
-🚀 Hosted on **Render (free tier)** – may experience a short delay on first load due to cold starts.  
-🔗 [View Live Project](https://tesla-clone-ok3b.onrender.com)
+ Hosted on **Render (free tier)** – may experience a short delay on first load due to cold starts. [View Live Project](https://tesla-clone-ok3b.onrender.com)
 
-## 🛠️ Tech Stack
-- JavaScript  
-- Tailwind CSS
-- EJS 
-- Express.js  
-- SQLite  
+ **Tech Stack:**
+ `JavaScript`, `Tailwind`,  `EJS`, `Express`, `SQLite`
+
 
